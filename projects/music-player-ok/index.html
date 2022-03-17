@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="music-player">
+    <div class="img-container">
+      <img src="./images/cover.svg" alt="cover" class="cover">
+    </div>
+    <div class="music-container">
+      <div class="music-data">
+        <div class="music-info">
+          <h4 class="music-title"></h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <audio src="./audio/bad.mp3" class="audio"></audio>
+      </div>
+      <div class="navigation">
+        <button class="prev-btn">
+          <img src="./icons/prev.svg" alt="prev">
+        </button>
+        <button class="play-btn">
+          <img src="./icons/play.svg" alt="play">
+        </button>
+        <button class="next-btn">
+          <img src="./icons/next.svg" alt="next">
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

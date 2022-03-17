@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .description {
+    width: 100%;
+    height: 7rem;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    height: calc(100% - 7rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .is-a-container,
+    .has-a-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-self: flex-start;
+      max-width: 50%;
+      min-width: 50%;
+      height: 100%;
+      border-right: 1px solid black;
+      overflow-y: scroll;
+
+      .rectangle {
+        margin: 0;
+        padding: 1rem;
+        border-bottom: 1px solid black;
+        height: 10rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .shape {
+          border: 1px solid black;
+          transition: transform 1s ease;
+        }
+
+        .shape-square-circle {
+          border: 1px solid black;
+        }
+
+        .concepts {
+          .abstration,
+          .inheritence,
+          .polymorphism,
+          .encapsulation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .abstraction-btn,
+            select,
+            .encapsulation-btn,
+            .polymorphism-dropdown {
+              cursor: pointer;
+              width: 12rem;
+              height: 2rem;
+              padding: 0.1rem;
+              text-align: center;
+              margin-left: 0.5rem;
+            }
+          }
+
+          .inheritence {
+            .inheritance-dropdown {
+            }
+          }
+
+          .encapsulation {
+            .encapsulation-btn {
+            }
+          }
+          .polymorphism {
+            .polymorphism-dropdown {
+            }
+          }
+        }
+      }
+    }
+
+    .has-a-container {
+      border-right: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+      .rectangle-has-a {
+        margin: 0;
+        padding: 1rem;
+        height: 7rem;
+      }
+    }
+  }
+}

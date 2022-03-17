@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Expense Tracker</h1>
+  </header>
+  <div class="container">
+    <div class="balance-container">
+      <div class="balance">
+        <label class="balance-label" for="balance">YOUR BALANCE</label>
+        <input type="text" name="balance" readonly class="balance-input" value="$0">
+        <div class="balance-breakdown">
+          <div class="balance-income">
+            <span class="balance-income-label">INCOME</span>
+            <span class="balance-income-amount">0</span>
+          </div>
+          <div class="balance-expense">
+            <span class="balance-expense-label">EXPENSE</span>
+            <span class="balance-expense-amount">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="transaction">
+        <label class="transaction-form-label" for="form">Add new transaction</label>
+        <form class="transaction-form" name="form">
+          <label class="new-transaction-text-label" for="new-transaction-text">Description</label>
+          <input class="new-transaction-text-input" name="new-transaction-text" placeholder="Enter description...">
+          <label class="new-transaction-amount-label" for="new-transaction-amount">Amount (negative=expense,positive=income)</label>
+          <input class="new-transaction-amount-input" name="new-transaction-amount" placeholder="Enter amount...">
+          <button class="add-transaction-button">Add transaction!</button>
+        </form>
+      </div>
+    </div>
+    <div class="history">
+      <h3>History</h3>
+      <div class="history-container"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

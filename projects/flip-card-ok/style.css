@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Comforter', cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body .container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+body .container .card-container {
+  height: 15rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+body .container .card-container .card {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .container .card-container .card figure {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: absolute;
+  margin: 0;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+body .container .card-container .card .front {
+  background-color: #0c0c3d;
+}
+
+body .container .card-container .card .back {
+  background-color: #5e0303;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  visibility: hidden;
+}
+
+body .container .card-container:hover .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body .container .card-container:hover .card .front {
+  visibility: hidden;
+}
+
+body .container .card-container:hover .card .back {
+  visibility: visible;
+}
+/*# sourceMappingURL=style.css.map */

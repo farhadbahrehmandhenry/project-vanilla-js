@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5e5e5;
+}
+
+body h1 {
+  margin: 0.5rem;
+}
+
+body .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+body .buttons .rule-btn,
+body .buttons .start-btn {
+  height: 2rem;
+  width: 5rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #a8dadc;
+  margin-left: 0.5rem;
+}
+
+body .rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  height: 100%;
+  position: absolute;
+  left: -15rem;
+  padding: 1rem;
+  background-color: #1d3557;
+  color: white;
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
+}
+
+body .rules h2 {
+  margin-bottom: 2rem;
+}
+
+body .rules .close-btn {
+  height: 2rem;
+  width: 5rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  color: black;
+  background-color: #a8dadc;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+body .rules.active {
+  left: 0;
+}
+
+body .canvas {
+  background-color: #a8dadc;
+}
+/*# sourceMappingURL=style.css.map */

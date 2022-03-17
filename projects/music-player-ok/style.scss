@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Comforter', cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+
+  .music-player {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 25rem;
+    height: 7rem;
+    background: transparent;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transform: translateX(-100px);
+    width: 0;
+    transition: all 2s 1s ease;
+    // box-shadow: 0 20px 20px 0 rgba(252, 140, 140, 1);
+
+    .img-container {
+      border-radius: 50%;
+      position: absolute;
+      width: 9rem;
+      height: 9rem;
+      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      opacity: 1;
+      // overflow: hidden;
+
+      .cover {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        cursor: pointer;
+        background: transparent;
+        z-index: 2;
+        position: relative;
+        border-radius: 0;
+        transition: border-radius 2s ease;
+        background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+        animation: rotate 3s linear infinite;
+        animation-play-state: paused;
+      }
+
+      .cover.visible {
+        border-radius: 50%;
+      }
+    }
+
+    .music-container {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 0.5rem;
+      width: calc(100% - 10rem);
+      border-bottom-left-radius: 200px;
+      border-top-left-radius: 200px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      width: 0;
+      transition: all 2s 1s ease;
+      // box-shadow: 0 20px 20px 0 black;
+
+      .music-data {
+        height: 2rem;
+        width: calc(100% - 10rem);
+        padding-right: 1rem;
+        align-self: flex-end;
+
+        .music-info {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          padding-left: 2rem;
+
+          .music-title {
+          }
+          .progress-container {
+            height: 0.3rem;
+            width: calc(100%);
+            cursor: pointer;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+
+            .progress {
+              background-color: #f04a60;
+              width: 0;
+              height: 100%;
+            }
+          }
+        }
+
+        .audio {
+        }
+      }
+
+      .navigation {
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        padding-right: 1rem;
+        width: calc(100% - 14rem);
+
+        .prev-btn,
+        .play-btn,
+        .next-btn {
+          width: 15%;
+          // height: 20%;
+          opacity: 0.7;
+          margin-left: 0.5rem;
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          border: 2px solid #f04a60;
+          visibility: hidden;
+          transition: visibility 1s ease;
+        }
+
+        .play-btn.visible,
+        .prev-btn.visible,
+        .next-btn.visible {
+          visibility: visible;
+          transition: visibility 1s 1.5s ease;
+        }
+
+        .next {
+        }
+      }
+
+      .navigation.visible {
+      }
+    }
+
+    .music-container.visible {
+      width: 100%;
+      background-color: #ff9a9e;
+      transition: width 2s ease;
+      // box-shadow: 0 20px 20px 0 hsl(0, 1%, 40%);
+    }
+  }
+
+  .music-player.visible {
+    width: 27rem;
+    transition: width 2s ease;
+  }
+
+  .music-player.play .cover {
+    animation-play-state: running;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

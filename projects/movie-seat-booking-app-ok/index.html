@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Movie Seat booking App</title>
+</head>
+<body>
+  <div class="cotainer">
+    <div class="header">
+      <div class="movie-picker">
+        <label for="move-dropdown">Pick a movie:</label>
+        <select type="text" class="movie-dropdown">
+          <option value="12">The Pianist($12)</option>
+          <option value="10">Kill Bill($10)</option>
+          <option value="8">Logan($8)</option>
+          <option value="6">Soul($6)</option>
+        </select>
+      </div>
+      <div class="seat-types">
+        <div class="selected"><span class="seat-icon"></span> Selected</div>
+        <div class="occupied"><span class="seat-icon"></span> Ocupied</div>
+        <div class="available"><span class="seat-icon"></span> Available</div>
+      </div>
+    </div>
+    <div class="screen"></div>
+    <div class="seat-container">
+
+    </div>
+    <div class="order-description">
+      You have selected <soan class="seat-count">0</soan> seats for a price of <span class="price">0</span>$
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comforter', cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    .card-container {
+      height: 15rem;
+      width: 10rem;
+      cursor: pointer;
+    
+      .card {
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease;
+        transform-style: preserve-3d;
+        
+        figure {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          position: absolute;
+          margin: 0;
+          border-radius: 10px;
+          backface-visibility: hidden;
+        }
+
+        .front {
+          background-color: rgb(12, 12, 61);
+        }
+
+        .back {
+          background-color: rgb(94, 3, 3);
+          transform: rotateY(180deg);
+          visibility: hidden;
+        }
+      }
+
+      &:hover {
+        .card {
+          transform: rotateY(180deg);
+
+          .front {
+            visibility: hidden;
+          }
+
+          .back {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}

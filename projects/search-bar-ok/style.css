@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #414833;
+}
+
+body .search-container {
+  height: 80vmin;
+  width: 50vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #a4ac86;
+  border-radius: 15px;
+}
+
+body .search-container .title {
+  font-size: 1.5rem;
+}
+
+body .search-container .search-input {
+  width: 90%;
+  height: 2.5rem;
+  margin: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+body .search-container .items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70%;
+  border: 1px solid black;
+  width: 90%;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+body .search-container .items-container .item {
+  list-style: none;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.5rem;
+}
+
+body .search-container .items-container .item:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+body .search-container .items-container .item.hide {
+  display: none;
+}
+
+body .search-container .items-container::-webkit-scrollbar {
+  width: 0;
+  /* width of the entire scrollbar */
+}
+
+body .search-container .items-container::-webkit-scrollbar-track {
+  background: #414833;
+  /* color of the tracking area */
+}
+
+body .search-container .items-container::-webkit-scrollbar-thumb {
+  background-color: blue;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #414833;
+  /* creates padding around scroll thumb */
+}
+/*# sourceMappingURL=style.css.map */

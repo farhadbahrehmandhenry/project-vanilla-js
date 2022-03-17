@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #184e77;
+  color: white;
+}
+
+body .container {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .title {
+  margin-bottom: 1rem;
+}
+
+body .container .exchange-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .exchange-container .exchange-from,
+body .container .exchange-container .exchange-to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+  height: 2rem;
+  min-width: 15rem;
+}
+
+body .container .exchange-container .exchange-from .from-label,
+body .container .exchange-container .exchange-from .to-label,
+body .container .exchange-container .exchange-to .from-label,
+body .container .exchange-container .exchange-to .to-label {
+  min-width: 3rem;
+}
+
+body .container .exchange-container .exchange-from .from-currency,
+body .container .exchange-container .exchange-from .to-currency,
+body .container .exchange-container .exchange-to .from-currency,
+body .container .exchange-container .exchange-to .to-currency {
+  height: 100%;
+  margin-right: 0.5rem;
+  width: 4rem;
+  border-radius: 5px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+body .container .exchange-container .exchange-from .from-count,
+body .container .exchange-container .exchange-from .to-count,
+body .container .exchange-container .exchange-to .from-count,
+body .container .exchange-container .exchange-to .to-count {
+  height: 100%;
+  width: 8rem;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: lightgray;
+}
+
+body .container .exchange-container .exchange-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+body .container .exchange-container .exchange-direction .direction {
+  width: 3rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+body .container .exchange-container .exchange-direction .right {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+body .container .exchange-container .exchange-direction .left {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+body .container .exchange-container .exchange-direction .rate {
+  border: none;
+  outline: 0;
+  background-color: #184e77;
+  font-size: 0.7rem;
+  width: 10rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  body .container {
+    height: 40%;
+  }
+  body .container .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body .container {
+    height: 30%;
+  }
+  body .container .title {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  body .container .exchange-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .exchange-container .exchange-direction .direction {
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  body .container .exchange-container .exchange-direction .right {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+  }
+  body .container .exchange-container .exchange-direction .left {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+  }
+}
+/*# sourceMappingURL=style.css.map */

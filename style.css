@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0096c7;
+}
+
+body .projects-container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .projects-container .card {
+  border: 1px solid 005f73;
+  width: 10rem;
+  height: 15rem;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #4a4e69;
+  opacity: 0.9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+body .projects-container .card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #22223b;
+}
+
+body .projects-container .card:hover .card-name {
+  display: none;
+}
+
+body .projects-container .card:hover img {
+  display: block;
+}
+
+body .projects-container .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: none;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+/*# sourceMappingURL=style.css.map */

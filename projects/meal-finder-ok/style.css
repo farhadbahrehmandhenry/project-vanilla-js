@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body .container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body .container .header {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  background-color: #03045e;
+  color: white;
+}
+
+body .container .header .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40%;
+}
+
+body .container .header .controls .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 1rem;
+}
+
+body .container .header .controls .radio-container .search-radio-container label,
+body .container .header .controls .radio-container .area-radio-container label,
+body .container .header .controls .radio-container .random-radio-container label {
+  cursor: pointer;
+}
+
+body .container .header .controls .radio-container .search-radio-container input,
+body .container .header .controls .radio-container .area-radio-container input,
+body .container .header .controls .radio-container .random-radio-container input {
+  cursor: pointer;
+}
+
+body .container .header .controls .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container .header .controls .search-container .search-input {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  min-width: 10rem;
+  padding-left: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+body .container .header .controls .search-container .search-btn,
+body .container .header .controls .search-container .random-btn {
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body .container .header .controls .search-container .search-btn img,
+body .container .header .controls .search-container .random-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+body .container .header .controls .search-container .search-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+body .container .header .controls .search-container .random-btn {
+  border-radius: 5px;
+  display: none;
+  min-width: 12rem;
+}
+
+body .container .header .controls .search-container .area-dropdown {
+  height: 2rem;
+  margin-left: 1rem;
+  min-width: 12rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: black;
+  display: none;
+  padding: 0.5rem;
+}
+
+body .container .meal-container {
+  width: 100%;
+  height: calc(100% - 10rem);
+  background-color: #023e8a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+body .container .meal-container .meal-item {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .meal-container .meal-item img {
+  width: 100%;
+  height: 100%;
+}
+
+body .container .meal-container .meal-item .meal-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .meal-container .meal-item .meal-title span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body .container .meal-container .meal-item:hover .meal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+body .container .meal-detail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  padding: 1rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  overflow: scroll;
+}
+
+body .container .meal-detail img {
+  width: 60vmin;
+  height: 60vmin;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+body .container .meal-detail .close-btn {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+
+body .container .meal-detail .meal-general-detail {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+body .container .meal-detail .meal-ingredients {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding: 1rem;
+}
+
+body .container .meal-detail .meal-instruction {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+body .container .meal-detail.show {
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=style.css.map */

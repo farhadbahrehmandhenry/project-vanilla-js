@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comforter', cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9d0208;
+  scroll-snap-type: y mandatory; //proximity
+
+  section, .header {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9d0208;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    h1 {
+      font-size: 2rem;
+
+      span {
+        font-size: 8rem;
+      }
+    }
+  }
+
+  .sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+      scroll-snap-align: start;
+      min-width: 15rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .mj-center {
+      min-width: 508px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .mj-left {
+        justify-self: flex-start;
+        align-self: flex-start;
+        position: fixed;
+        top: -100%;
+        z-index: 1;
+    
+        img {
+          width: 259px;
+          height: 96%;
+        }
+      }
+      
+      .mj-right {
+        justify-self: flex-end;
+        align-self: flex-end;
+        position: absolute;
+        top: 100%;
+      
+        img {
+          width: 251px;
+          height: 100%;
+        }
+      }
+    }
+  
+    .mj-one, .mj-two, .mj-three, .mj-four {
+      width: auto;
+      width: calc((100% - 580px) / 4);
+      position: fixed;
+
+      img {
+        height: 12rem;
+      }
+    }
+
+    .mj-one {
+      left: 25px;
+      top: -120%;
+      position: fixed;
+
+      img {
+        align-self: flex-end;
+      }
+    }
+
+    .mj-two {
+      right: 100px;
+      top: -100%;
+
+      img {
+        align-self: flex-end;
+      }
+    }
+
+    .mj-three {
+      right: 25px;
+      top: -120%;
+
+      img {
+        align-self: flex-end;
+      }
+    }
+
+    .mj-four {
+      left: 125px;
+      top: 70%;
+
+      img {
+        align-self: center;
+      }
+    }
+  }
+}

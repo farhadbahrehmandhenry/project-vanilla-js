@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="cards-container">
+    <div class="title">Flash Cards</div>
+    <div class="cards"></div>
+    <div class="nevigation-container">
+      <div class="prev"><i class="icon-arrow-left"></i></div>
+      <div class="pagination"></div>
+      <div class="next"><i class="icon-arrow-right"></i></div>
+    </div>
+    <div class="action-buttons">
+      <button class="add-new-card-btn">+ Add Cards</button>
+      <button class="clear-all-cards-btn" disabled><i class="icon-trash"></i>Remove All Cards</button>
+      <button class="clear-this-cards-btn" disabled><i class="icon-trash"></i>Remove This Card</button>
+    </div>
+  </div>
+  <div class="add-card-container">
+    <div class="close-btn">X</div>
+    <div class="add-title">Add New Card</div>
+    <div class="question-label">Question:</div>
+    <input class="question-input" type="text" required placeholder="Enter Question...">
+    <div class="answer-label">Answer:</div>
+    <input class="answer-input" type="text" required placeholder="Enter Answer...">
+    <button class="add-card-btn">Add</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

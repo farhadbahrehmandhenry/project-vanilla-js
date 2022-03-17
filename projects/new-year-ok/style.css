@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url("./image/new-year.jpg") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #94d2bd;
+  padding-top: 10rem;
+}
+
+body img {
+  width: 3rem;
+  height: 3rem;
+}
+
+body h1 {
+  font-size: 3rem;
+}
+
+body .date {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: flex-start;
+  margin-top: 1rem;
+}
+
+body .date .days-container,
+body .date .hours-container,
+body .date .minutes-container,
+body .date .seconds-container {
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .year {
+  font-size: 8rem;
+  letter-spacing: 3rem;
+  opacity: 0.2;
+  padding-left: 5rem;
+  position: absolute;
+  bottom: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

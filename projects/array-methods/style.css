@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 80%;
+  border: 1px solid black;
+}
+
+body .container .users-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid black;
+}
+
+body .container .users-container .users-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+body .container .users-container .users {
+  overflow: scroll;
+  padding: 0.5rem;
+  max-width: 20rem;
+}
+
+body .container .methods-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid black;
+}
+
+body .container .methods-container .for-each,
+body .container .methods-container .sort,
+body .container .methods-container .map,
+body .container .methods-container .filter,
+body .container .methods-container .find,
+body .container .methods-container .reduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 3rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+body .container .methods-container .for-each .description,
+body .container .methods-container .sort .description,
+body .container .methods-container .map .description,
+body .container .methods-container .filter .description,
+body .container .methods-container .find .description,
+body .container .methods-container .reduce .description {
+  text-align: left;
+}
+
+body .container .methods-container .for-each .for-each-btn,
+body .container .methods-container .for-each .sort-btn,
+body .container .methods-container .for-each .map-btn,
+body .container .methods-container .for-each .filter-btn,
+body .container .methods-container .for-each .find-btn,
+body .container .methods-container .for-each .reduce-btn,
+body .container .methods-container .sort .for-each-btn,
+body .container .methods-container .sort .sort-btn,
+body .container .methods-container .sort .map-btn,
+body .container .methods-container .sort .filter-btn,
+body .container .methods-container .sort .find-btn,
+body .container .methods-container .sort .reduce-btn,
+body .container .methods-container .map .for-each-btn,
+body .container .methods-container .map .sort-btn,
+body .container .methods-container .map .map-btn,
+body .container .methods-container .map .filter-btn,
+body .container .methods-container .map .find-btn,
+body .container .methods-container .map .reduce-btn,
+body .container .methods-container .filter .for-each-btn,
+body .container .methods-container .filter .sort-btn,
+body .container .methods-container .filter .map-btn,
+body .container .methods-container .filter .filter-btn,
+body .container .methods-container .filter .find-btn,
+body .container .methods-container .filter .reduce-btn,
+body .container .methods-container .find .for-each-btn,
+body .container .methods-container .find .sort-btn,
+body .container .methods-container .find .map-btn,
+body .container .methods-container .find .filter-btn,
+body .container .methods-container .find .find-btn,
+body .container .methods-container .find .reduce-btn,
+body .container .methods-container .reduce .for-each-btn,
+body .container .methods-container .reduce .sort-btn,
+body .container .methods-container .reduce .map-btn,
+body .container .methods-container .reduce .filter-btn,
+body .container .methods-container .reduce .find-btn,
+body .container .methods-container .reduce .reduce-btn {
+  min-width: 5rem;
+}
+
+body .container .result-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid black;
+}
+
+body .container .result-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+body .container .result-container .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+  padding: 0.5rem;
+  max-width: 20rem;
+  width: 100%;
+}
+
+body .container .result-container .result .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=style.css.map */

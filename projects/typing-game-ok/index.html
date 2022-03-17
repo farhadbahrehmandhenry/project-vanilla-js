@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Typing Game</title>
+</head>
+<body>
+  <div class="header">
+    <label for="difficulty-dropdown">Difficulty: </label>
+    <select class="difficulty-dropdown" name="difficulty-dropdown">
+      <option class="easy" value="easy">Easy</option>
+      <option class="medium" value="medium">Medium</option>
+      <option class="hard" value="hard">Hard</option>
+    </select>
+    <button class="start-btn">START</button>
+  </div>
+  <div class="game-container">
+    <div class="game-box">
+      <div class="game-title">Typing Champ</div>
+      <div class="game-detail">
+        <div class="remaining-time-container">Time left: 
+          <input type="text" readonly class="remaining-time"></input>
+        </div>
+        <div class="score-container">Score: 
+          <input type="text" readonly class="score"></input>
+        </div>
+      </div>
+      <div class="typing-area">
+        <h4>Type the following:</h4>
+        <div class="word"></div>
+        <input type="text" class="type-input" placeholder="Type the word here...">
+      </div>
+    </div>
+    <button class="settings">
+      <img src="./image/settings.svg" alt="settings">
+    </button>
+  </div>
+  <div class="score-notification-container">
+    <div class="notification-popup">
+      <h1 class="notification-title">Time ran out</h1>
+      <h3 class="final-score-notification">Your final score is: </h3>
+      <button class="restart-btn">RESTART</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

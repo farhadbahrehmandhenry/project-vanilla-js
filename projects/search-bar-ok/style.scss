@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #414833;
+
+  .search-container {
+    height: 80vmin;
+    width: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a4ac86;
+    border-radius: 15px;
+
+    .title {
+      font-size: 1.5rem;  
+    }
+
+    .search-input {
+      width: 90%;
+      height: 2.5rem;
+      margin: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      border-radius: 2px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .items-container {
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+      border: 1px solid black;
+      width: 90%;
+      border-radius: 5px;
+      overflow-y: scroll;
+
+     .item {
+      list-style: none;
+      width: 100%;
+      min-height: 3rem;
+      padding: 0.5rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid black;
+       }
+
+      &.hide {
+        display: none;
+      }
+     }
+    }
+
+    .items-container::-webkit-scrollbar {
+      width: 0;               /* width of the entire scrollbar */
+    }
+    
+    .items-container::-webkit-scrollbar-track {
+      background: #414833;        /* color of the tracking area */
+    }
+    
+    .items-container::-webkit-scrollbar-thumb {
+      background-color: blue;    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: 3px solid #414833;  /* creates padding around scroll thumb */
+    }
+  }
+}

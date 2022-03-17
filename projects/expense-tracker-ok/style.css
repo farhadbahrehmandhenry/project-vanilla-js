@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f0efeb;
+  overflow: hidden;
+}
+
+body .header {
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  height: calc(100% - 7rem);
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .balance-container {
+  min-width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+body .container .balance-container .balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50%;
+}
+
+body .container .balance-container .balance .balance-label {
+  font-size: 1.3rem;
+}
+
+body .container .balance-container .balance .balance-input {
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #f0efeb;
+}
+
+body .container .balance-container .balance .balance-breakdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+body .container .balance-container .balance .balance-breakdown .balance-income,
+body .container .balance-container .balance .balance-breakdown .balance-expense {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+body .container .balance-container .balance .balance-breakdown .balance-income .balance-income-amount,
+body .container .balance-container .balance .balance-breakdown .balance-expense .balance-income-amount {
+  color: green;
+}
+
+body .container .balance-container .balance .balance-breakdown .balance-income .balance-expense-amount,
+body .container .balance-container .balance .balance-breakdown .balance-expense .balance-expense-amount {
+  color: red;
+}
+
+body .container .balance-container .balance .balance-breakdown .balance-income .balance-expense-amount::before,
+body .container .balance-container .balance .balance-breakdown .balance-income .balance-income-amount::before,
+body .container .balance-container .balance .balance-breakdown .balance-expense .balance-expense-amount::before,
+body .container .balance-container .balance .balance-breakdown .balance-expense .balance-income-amount::before {
+  content: '$';
+}
+
+body .container .balance-container .balance .balance-breakdown .balance-income {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-right: 1px solid lightgray;
+}
+
+body .container .balance-container .balance .balance-breakdown .balance-expense {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+body .container .balance-container .transaction {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .balance-container .transaction .transaction-form-label {
+  font-size: 1.3rem;
+  border-top: 1px solid lightgray;
+}
+
+body .container .balance-container .transaction .transaction-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body .container .balance-container .transaction .transaction-form .new-transaction-text-input,
+body .container .balance-container .transaction .transaction-form .new-transaction-amount-input {
+  min-height: 2rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  margin-top: 0.2rem;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+
+body .container .balance-container .transaction .transaction-form .new-transaction-amount-label {
+  margin-top: 1rem;
+  white-space: b;
+}
+
+body .container .balance-container .transaction .transaction-form .add-transaction-button {
+  margin-top: 1rem;
+  min-height: 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+body .container .history {
+  min-width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0.5rem;
+  padding-top: 0;
+  padding-right: 2rem;
+}
+
+body .container .history .history-container {
+  border-top: 1px solid black;
+  width: 100%;
+  height: 100%;
+  margin-top: 0.5rem;
+  overflow-y: scroll;
+}
+
+body .container .history .history-container .transaction-item.income,
+body .container .history .history-container .transaction-item.expense {
+  border-right: 5px solid green;
+  height: 2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .history .history-container .transaction-item.income .remove-item-button,
+body .container .history .history-container .transaction-item.expense .remove-item-button {
+  width: 2rem;
+  height: 100%;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .history .history-container .transaction-item.income .remove-item-button img,
+body .container .history .history-container .transaction-item.expense .remove-item-button img {
+  height: 0.8rem;
+}
+
+body .container .history .history-container .transaction-item.income .remove-item-button:hover,
+body .container .history .history-container .transaction-item.expense .remove-item-button:hover {
+  cursor: pointer;
+}
+
+body .container .history .history-container .transaction-item.income .item-detail,
+body .container .history .history-container .transaction-item.expense .item-detail {
+  -webkit-box-shadow: 0px 1px lightgray;
+          box-shadow: 0px 1px lightgray;
+  width: calc(100% - 2rem);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+body .container .history .history-container .transaction-item.income .item-detail .item-description,
+body .container .history .history-container .transaction-item.expense .item-detail .item-description {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body .container .history .history-container .transaction-item.income:hover .remove-item-button,
+body .container .history .history-container .transaction-item.expense:hover .remove-item-button {
+  visibility: visible;
+}
+
+body .container .history .history-container .transaction-item.expense {
+  border-right: 5px solid red;
+}
+
+@media only screen and (max-width: 750px) {
+  body .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

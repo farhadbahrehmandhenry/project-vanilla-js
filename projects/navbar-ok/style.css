@@ -1,0 +1,249 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body .app-container {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .app-container .navbar {
+  position: absolute;
+  top: 0;
+  height: 8vh;
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-start;
+  background-color: #3f1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+body .app-container .navbar .nav-title {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+body .app-container .navbar .nav-items {
+  width: 50%;
+  padding-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadeIn 1s ease;
+          animation: fadeIn 1s ease;
+}
+
+body .app-container .navbar .nav-items li {
+  list-style: none;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+body .app-container .navbar .nav-items li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .app-container .navbar .hamburger {
+  display: none;
+}
+
+body .app-container .main-screen {
+  height: 100%;
+  width: 100%;
+}
+
+body .app-container .main-screen img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  body .app-container .navbar .nav-title {
+    width: auto;
+  }
+  body .app-container .navbar .nav-items {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 92vh;
+    width: 50%;
+    right: -30rem;
+    top: 8vh;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(63, 27, 27, 0.5);
+    margin: 0;
+    -webkit-transition: right 1s ease;
+    transition: right 1s ease;
+  }
+  body .app-container .navbar .nav-items li {
+    list-style: none;
+    cursor: pointer;
+    opacity: 0;
+  }
+  body .app-container .navbar .nav-items li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body .app-container .navbar .nav-items.active {
+    right: 0;
+  }
+  body .app-container .navbar .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  body .app-container .navbar .hamburger .first-div, body .app-container .navbar .hamburger .second-div, body .app-container .navbar .hamburger .third-div {
+    background-color: white;
+    width: 2.3rem;
+    margin-top: 0.2rem;
+    height: 0.3rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  body .app-container .navbar .hamburger .first-div, body .app-container .navbar .hamburger .third-div {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  body .app-container .navbar .hamburger .first-div.opened {
+    position: absolute;
+    top: 1.3rem;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  body .app-container .navbar .hamburger .second-div {
+    opacity: 1;
+  }
+  body .app-container .navbar .hamburger .second-div.opened {
+    opacity: 0;
+  }
+  body .app-container .navbar .hamburger .third-div.opened.opened {
+    position: absolute;
+    bottom: 1.5rem;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 0.7;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 0.7;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInMainNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeInMainNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+/*# sourceMappingURL=style.css.map */

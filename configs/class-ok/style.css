@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .description {
+  width: 100%;
+  height: 7rem;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+
+body .container {
+  width: 100%;
+  height: calc(100% - 7rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .is-a-container,
+body .container .has-a-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 50%;
+  min-width: 50%;
+  height: 100%;
+  border-right: 1px solid black;
+  overflow-y: scroll;
+}
+
+body .container .is-a-container .rectangle,
+body .container .has-a-container .rectangle {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  height: 10rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .is-a-container .rectangle .shape,
+body .container .has-a-container .rectangle .shape {
+  border: 1px solid black;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+body .container .is-a-container .rectangle .shape-square-circle,
+body .container .has-a-container .rectangle .shape-square-circle {
+  border: 1px solid black;
+}
+
+body .container .is-a-container .rectangle .concepts .abstration,
+body .container .is-a-container .rectangle .concepts .inheritence,
+body .container .is-a-container .rectangle .concepts .polymorphism,
+body .container .is-a-container .rectangle .concepts .encapsulation,
+body .container .has-a-container .rectangle .concepts .abstration,
+body .container .has-a-container .rectangle .concepts .inheritence,
+body .container .has-a-container .rectangle .concepts .polymorphism,
+body .container .has-a-container .rectangle .concepts .encapsulation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .is-a-container .rectangle .concepts .abstration .abstraction-btn,
+body .container .is-a-container .rectangle .concepts .abstration select,
+body .container .is-a-container .rectangle .concepts .abstration .encapsulation-btn,
+body .container .is-a-container .rectangle .concepts .abstration .polymorphism-dropdown,
+body .container .is-a-container .rectangle .concepts .inheritence .abstraction-btn,
+body .container .is-a-container .rectangle .concepts .inheritence select,
+body .container .is-a-container .rectangle .concepts .inheritence .encapsulation-btn,
+body .container .is-a-container .rectangle .concepts .inheritence .polymorphism-dropdown,
+body .container .is-a-container .rectangle .concepts .polymorphism .abstraction-btn,
+body .container .is-a-container .rectangle .concepts .polymorphism select,
+body .container .is-a-container .rectangle .concepts .polymorphism .encapsulation-btn,
+body .container .is-a-container .rectangle .concepts .polymorphism .polymorphism-dropdown,
+body .container .is-a-container .rectangle .concepts .encapsulation .abstraction-btn,
+body .container .is-a-container .rectangle .concepts .encapsulation select,
+body .container .is-a-container .rectangle .concepts .encapsulation .encapsulation-btn,
+body .container .is-a-container .rectangle .concepts .encapsulation .polymorphism-dropdown,
+body .container .has-a-container .rectangle .concepts .abstration .abstraction-btn,
+body .container .has-a-container .rectangle .concepts .abstration select,
+body .container .has-a-container .rectangle .concepts .abstration .encapsulation-btn,
+body .container .has-a-container .rectangle .concepts .abstration .polymorphism-dropdown,
+body .container .has-a-container .rectangle .concepts .inheritence .abstraction-btn,
+body .container .has-a-container .rectangle .concepts .inheritence select,
+body .container .has-a-container .rectangle .concepts .inheritence .encapsulation-btn,
+body .container .has-a-container .rectangle .concepts .inheritence .polymorphism-dropdown,
+body .container .has-a-container .rectangle .concepts .polymorphism .abstraction-btn,
+body .container .has-a-container .rectangle .concepts .polymorphism select,
+body .container .has-a-container .rectangle .concepts .polymorphism .encapsulation-btn,
+body .container .has-a-container .rectangle .concepts .polymorphism .polymorphism-dropdown,
+body .container .has-a-container .rectangle .concepts .encapsulation .abstraction-btn,
+body .container .has-a-container .rectangle .concepts .encapsulation select,
+body .container .has-a-container .rectangle .concepts .encapsulation .encapsulation-btn,
+body .container .has-a-container .rectangle .concepts .encapsulation .polymorphism-dropdown {
+  cursor: pointer;
+  width: 12rem;
+  height: 2rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+body .container .has-a-container {
+  border-right: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+body .container .has-a-container .rectangle-has-a {
+  margin: 0;
+  padding: 1rem;
+  height: 7rem;
+}
+/*# sourceMappingURL=style.css.map */

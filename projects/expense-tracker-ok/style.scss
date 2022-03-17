@@ -1,0 +1,221 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  @include flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0efeb;
+  overflow: hidden;
+
+  .header {
+    width: 100%;
+    height: 4rem;
+    @include flex;
+  }
+
+  .container {
+    height: calc(100% - 7rem);
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    @include flex;
+
+    .balance-container {
+      min-width: 50%;
+      height: 100%;
+      @include flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      justify-content: flex-start;
+      padding: 0.5rem;
+
+      .balance {
+        @include flex;
+        flex-direction: column;
+        max-width: 50%;
+
+        .balance-label {
+          font-size: 1.3rem;
+        }
+        .balance-input {
+          text-align: center;
+          border: none;
+          outline: none;
+          padding: 0.5rem;
+          font-size: 1.3rem;
+          background-color: #f0efeb;
+        }
+        .balance-breakdown {
+          @include flex;
+          width: 100%;
+          margin-top: 2rem;
+
+          .balance-income,
+          .balance-expense {
+            @include flex;
+            min-width: 50%;
+            flex-direction: column;
+            background-color: white;
+
+            .balance-income-label {
+            }
+            .balance-income-amount {
+              color: green;
+            }
+            .balance-expense-label {
+            }
+            .balance-expense-amount {
+              color: red;
+            }
+
+            .balance-expense-amount::before,
+            .balance-income-amount::before {
+              content: '$';
+            }
+          }
+
+          .balance-income {
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            border-right: 1px solid lightgray;
+          }
+          .balance-expense {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+
+      .transaction {
+        margin-top: 3rem;
+        @include flex;
+        flex-direction: column;
+
+        .transaction-form-label {
+          font-size: 1.3rem;
+          border-top: 1px solid lightgray;
+        }
+        .transaction-form {
+          @include flex;
+          flex-direction: column;
+          margin-top: 1rem;
+          align-items: flex-start;
+          align-self: flex-start;
+
+          .new-transaction-text-label {
+          }
+          .new-transaction-text-input,
+          .new-transaction-amount-input {
+            min-height: 2rem;
+            width: 100%;
+            padding-left: 0.5rem;
+            margin-top: 0.2rem;
+            border: none;
+            outline: none;
+            display: inline-block;
+          }
+          .new-transaction-amount-label {
+            margin-top: 1rem;
+            white-space: b;
+          }
+          .add-transaction-button {
+            margin-top: 1rem;
+            min-height: 2rem;
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .history {
+      min-width: 50%;
+      height: 100%;
+      @include flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      justify-content: flex-start;
+      padding: 0.5rem;
+      padding-top: 0;
+      padding-right: 2rem;
+
+      .history-container {
+        border-top: 1px solid black;
+        width: 100%;
+        height: 100%;
+        margin-top: 0.5rem;
+        overflow-y: scroll;
+
+        .transaction-item.income,
+        .transaction-item.expense {
+          border-right: 5px solid green;
+          height: 2rem;
+          margin-top: 0.2rem;
+          margin-bottom: 0.2rem;
+          @include flex;
+
+          .remove-item-button {
+            width: 2rem;
+            height: 100%;
+            visibility: hidden;
+            @include flex;
+
+            img {
+              height: 0.8rem;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          .item-detail {
+            box-shadow: 0px 1px lightgray;
+            width: calc(100% - 2rem);
+            height: 100%;
+            @include flex;
+            justify-content: space-between;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            padding-bottom: 0.3rem;
+
+            .item-description {
+              justify-self: center;
+            }
+            .item-amount {
+            }
+          }
+
+          &:hover {
+            .remove-item-button {
+              visibility: visible;
+            }
+          }
+        }
+        .transaction-item.expense {
+          border-right: 5px solid red;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    .container {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+:root {
+  --occupied-color: #9d0208;
+  --selected-color: #fb8500;
+}
+@mixin seat {
+  display: inline-block;
+  height: 1.8em;
+  width: 1.8em;
+  margin-right: 0.5rem;
+  background-color: #52b788;
+  border-radius: 5px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #023e8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cotainer {
+    height: 80vmin;
+    width: 70vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    perspective: 1000px;
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: auto;
+      width: 100%;
+
+      .movie-picker {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        label {
+          font-weight: bold;
+          font-size: 1.4rem;
+          color: white;
+          opacity: 0.9;
+        }
+
+        .movie-dropdown {
+          margin-left: 0.5rem;
+          border-radius: 5px;
+          height: 2rem;
+          min-width: 8rem;
+          background-color: lightgray;
+        }
+      }
+
+      .seat-types {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #03045e;
+        height: 3rem;
+        color: white;
+        opacity: 0.8;
+        width: 100%;
+        border-radius: 5px;
+
+        .available,
+        .occupied,
+        .selected {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+
+          span {
+            @include seat;
+          }
+        }
+
+        .selected {
+          span {
+            background-color: var(--selected-color);
+          }
+        }
+        .occupied {
+          span {
+            background-color: var(--occupied-color);
+          }
+        }
+        .available {
+          span {
+            background-color: #52b788;
+          }
+        }
+      }
+    }
+
+    .screen {
+      min-width: 50%;
+      min-height: 7rem;
+      height: 7rem;
+      background-color: white;
+      opacity: 0.8;
+      box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+      transform: rotateX(-45deg);
+    }
+
+    .seat-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 10rem;
+
+      .seats {
+        display: flex;
+
+        .seat {
+          @include seat;
+          cursor: pointer;
+          margin-bottom: 0.5rem;
+        }
+
+        .occupied-seat {
+          background-color: var(--occupied-color);
+          cursor: default;
+        }
+
+        .selected-seat {
+          background-color: var(--selected-color);
+        }
+
+        .seat:nth-child(2),
+        .seat:nth-child(6) {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .order-description {
+      .seat-count,
+      .price {
+        font-weight: bold;
+        color: purple;
+      }
+    }
+  }
+}

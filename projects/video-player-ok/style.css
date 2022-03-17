@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+body .video {
+  width: 50%;
+  height: 50%;
+  background-color: black !important;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 2rem;
+}
+
+body .controls {
+  background: #333;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  width: 50%;
+}
+
+body .controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+  min-width: 2rem;
+}
+
+body .controls .btn:focus {
+  outline: 0;
+}
+
+body .controls .fa-play {
+  color: green;
+}
+
+body .controls .fa-stop {
+  color: red;
+}
+
+body .controls .fa-pause {
+  color: white;
+}
+
+body .controls .time-stamp {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .video,
+  .controls {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

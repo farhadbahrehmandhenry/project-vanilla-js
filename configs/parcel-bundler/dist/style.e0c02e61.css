@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.nav-list {
+  height: 10vh;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-left: auto;
+}
+.nav-list .nav-links {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.home, .about {
+  height: 90vh;
+  position: absolute;
+  width: 100%;
+}
+.home .home-content, .home .about-content, .about .home-content, .about .about-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.home .home-content img, .home .about-content img, .about .home-content img, .about .about-content img {
+  height: 70%;
+}
+.home .home-content h1, .home .about-content h1, .about .home-content h1, .about .about-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.home .home-content p, .home .about-content p, .about .home-content p, .about .about-content p {
+  font-size: 1.5rem;
+}
+
+.home {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.about {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+/*# sourceMappingURL=/style.e0c02e61.css.map */

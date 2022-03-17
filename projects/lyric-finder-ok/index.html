@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Lyric Finder</title>
+</head>
+<body>
+  <div class="search-container">
+    <div class="title">Search for a Song</div>
+    <div class="form">
+      <input type="text" placeholder="song, keyword, ..." class="search-input">
+      <button class="submit">Search</button>
+    </div>
+    <table class="result-container">
+      <thead>
+        <tr>
+          <th>Artist/Band</th>
+          <th>Song</th>
+          <th>Get the Lyric</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="navigation">
+      <button class="prev" disabled>PREVIOUS</button>
+      <button class="next" disabled>NEXT</button>
+    </div>
+  </div>
+  <div class="lyric-container">
+    <div class="lyric-header">
+      <div class="artist-name"></div>
+      <div class="song-name"></div>
+    </div>
+    <div class="lyric"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

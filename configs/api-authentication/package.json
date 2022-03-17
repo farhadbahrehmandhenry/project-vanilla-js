@@ -1,0 +1,25 @@
+{
+  "name": "api-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "cypress run",
+    "cypress watch": "cypress open --config watchForFileChanges=true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cypress": "^9.5.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "guid": "^0.0.12",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15"
+  }
+}

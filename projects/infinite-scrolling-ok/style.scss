@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #003049;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .filter-container {
+    min-height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .filter {
+      width: 20rem;
+      height: 100%;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding-left: 0.5rem;
+    }
+  }
+
+  .post-container {
+    width: 100%;
+    // height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    .post {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 7rem;
+      min-width: 100%;
+      background-color: #023e8a;
+      position: relative;
+
+      .number {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        border-radius: 50%;
+        background-color: white;
+        height: 40px;
+        width: 40px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .post-info {
+        padding-left: 0.5rem;
+
+        .post-title {
+          margin-bottom: 1rem;
+        }
+        .post-body {
+        }
+      }
+    }
+  }
+
+  .loader {
+    opacity: 0;
+    display: flex;
+    position: fixed;
+    bottom: 25px;
+    transition: opacity 0.3s ease-in;
+    margin-top: 2rem;
+
+    .circle {
+      background-color: white;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 5px;
+      animation: bounce 0.5s ease-in infinite;
+    }
+
+    .circle:nth-last-of-type(2) {
+      animation-delay: 0.1s;
+    }
+    .circle:nth-last-of-type(3) {
+      animation-delay: 0.2s;
+    }
+  }
+
+  .loader.show {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

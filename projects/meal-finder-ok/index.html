@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Meal Finder</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Hungry? Let's cook a meal!</h1>
+      <div class="controls">
+        <div class="radio-container">
+          <div class="search-radio-container">
+            <input type="radio" id="search" value="search" name="filter-type" checked="checked">
+            <label for="search">Search meal by keyword</label>
+          </div>
+          <div class="random-radio-container">
+            <input type="radio" id="random" value="random" name="filter-type">
+            <label for="random">Too Hungry? Let's find a meal randomly</label>
+          </div>
+          <div class="area-radio-container">
+            <input type="radio" id="area" value="area" name="filter-type">
+            <label for="area">Filter meals by Area</label>
+          </div>
+        </div>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="meal name or keyword">
+          <button class="search-btn">
+            <img src="./image/search.svg" alt="search">
+          </button>
+          <button class="random-btn">
+            <img src="./image/random.svg" alt="random">
+          </button>
+          <select class="area-dropdown">
+            <option value="select">Select...</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <div class="meal-container"></div>
+    <div class="meal-detail">
+      <div class="close-btn"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

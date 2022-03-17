@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.container section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.container .one {
+  background-color: #03071e;
+}
+
+.container .two {
+  background-color: #370617;
+  height: 50vh;
+}
+
+.container .three {
+  background-color: #6a040f;
+  height: 200vh;
+}
+
+.container .four {
+  background-color: #9d0208;
+}
+/*# sourceMappingURL=style.css.map */

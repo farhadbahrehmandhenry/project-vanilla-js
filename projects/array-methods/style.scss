@@ -1,0 +1,115 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  @include flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  @include flex;
+
+  .container {
+    @include flex;
+    width: 60%;
+    height: 80%;
+    border: 1px solid black;
+
+    .users-container {
+      @include container;
+
+      .users-title {
+        @include flex;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+      }
+
+      .users {
+        overflow: scroll;
+        padding: 0.5rem;
+        max-width: 20rem;
+      }
+    }
+
+    .methods-container {
+      @include container;
+
+      .for-each,
+      .sort,
+      .map,
+      .filter,
+      .find,
+      .reduce {
+        @include flex;
+        justify-content: space-between;
+        min-height: 3rem;
+        width: 100%;
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        .description {
+          text-align: left;
+        }
+
+        .for-each-btn,
+        .sort-btn,
+        .map-btn,
+        .filter-btn,
+        .find-btn,
+        .reduce-btn {
+          min-width: 5rem;
+        }
+      }
+    }
+
+    .result-container {
+      @include container;
+
+      .title {
+        @include flex;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 1px solid black;
+
+        .name {
+        }
+      }
+
+      .result {
+        @include flex;
+        flex-direction: column;
+        overflow: scroll;
+        padding: 0.5rem;
+        max-width: 20rem;
+        width: 100%;
+
+        .user {
+          @include flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
