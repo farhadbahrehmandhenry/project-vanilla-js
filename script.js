@@ -10,6 +10,7 @@ var projects = [
   {name: 'Full Page Scroll', link: './projects/full-page-scroll-effect-ok/index.html', image: './projects/full-page-scroll-effect-ok/full-page-scroll.png'},
   {name: 'Hangman', link: './projects/hangman-ok/index.html', image: './projects/hangman-ok/hangman.png'},
   {name: 'Infinite Scroll', link: './projects/infinite-scrolling-ok/index.html', image: './projects/infinite-scrolling-ok/infinite-scroll.png'},
+  {name: 'Infinite Scroll', link: './projects/infinite-scrolling-2-ok/index.html', image: './projects/infinite-scrolling-2-ok/image/infinite-2.png'},
   {name: 'Meal Finder', link: './projects/meal-finder-ok/index.html', image: './projects/meal-finder-ok/image/meal.jpg'},
   {name: 'Popup Modal', link: './projects/modal-ok/index.html', image: './projects/modal-ok/modal.png'},
   {name: 'Movie Seat Booking', link: './projects/movie-seat-booking-app-ok/index.html', image: './projects/movie-seat-booking-app-ok/movie.png'},
