@@ -65,6 +65,7 @@
 | 28  | [Sortable List](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/sortable-list-ok)                       | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/sortable-list-ok/index.html)            |
 | 29  | [Guess the Number](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/guess-the-number-ok)                 | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/guess-the-number-ok/index.html)         |
 | 30  | [Quote Generator](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/qoute-generator-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/qoute-generator-ok/index.html)          |
+| 31  | [Picture In Picture](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/picture-in-picture-ok)             | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/picture-in-picture-ok/index.html)       |
 
 ## Useful websites
 

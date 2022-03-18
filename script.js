@@ -10,7 +10,7 @@ var projects = [
   {name: 'Full Page Scroll', link: './projects/full-page-scroll-effect-ok/index.html', image: './projects/full-page-scroll-effect-ok/full-page-scroll.png'},
   {name: 'Hangman', link: './projects/hangman-ok/index.html', image: './projects/hangman-ok/hangman.png'},
   {name: 'Infinite Scroll', link: './projects/infinite-scrolling-ok/index.html', image: './projects/infinite-scrolling-ok/infinite-scroll.png'},
-  {name: 'Infinite Scroll', link: './projects/infinite-scrolling-2-ok/index.html', image: './projects/infinite-scrolling-2-ok/image/infinite-2.png'},
+  {name: 'Infinite Scroll 2', link: './projects/infinite-scrolling-2-ok/index.html', image: './projects/infinite-scrolling-2-ok/image/infinite-2.png'},
   {name: 'Meal Finder', link: './projects/meal-finder-ok/index.html', image: './projects/meal-finder-ok/image/meal.jpg'},
   {name: 'Popup Modal', link: './projects/modal-ok/index.html', image: './projects/modal-ok/modal.png'},
   {name: 'Movie Seat Booking', link: './projects/movie-seat-booking-app-ok/index.html', image: './projects/movie-seat-booking-app-ok/movie.png'},
@@ -30,6 +30,7 @@ var projects = [
   {name: 'Sortable List', link: './projects/sortable-list-ok/index.html', image: './projects/sortable-list-ok/sortable-list.png'},
   {name: 'Guess the Number', link: './projects/guess-the-number-ok/index.html', image: './projects/guess-the-number-ok/image/guess-number.png'},
   {name: 'Quote Generator', link: './projects/quote-generator-ok/index.html', image: './projects/quote-generator-ok/image/quoting.png'},
+  {name: 'Picture In Picture', link: './projects/picture-in-picture-ok/index.html', image: './projects/picture-in-picture-ok/image/pictureInPicture.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok/index.html', image: './configs/class-ok/class.png'},
 ];
 
