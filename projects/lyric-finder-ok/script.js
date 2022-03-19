@@ -64,7 +64,9 @@ var searchSongs = async(term) => {
 }
 
 var navigate = async(url) => {
-  var data = await fetch(`https://cors-anywhere.herokuapp.com/${url}`);
+  var data = await fetch(`https://serene-shore-70276.herokuapp.com/${url}`);
+  console.log(data)
+
   var songs = await data.json();
 
   var total = songs.total;
