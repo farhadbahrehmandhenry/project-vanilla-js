@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alignments</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<body>
+
+  <main>
+    <h1><a href="../index.html">CSS Grid</a></h1>
+    <section class="gridSection gridSection--items">
+      <div class="properties">
+        <h3>CSS grid alignments</h3>
+        <p>Let's keep in mind that any <code>justify-*</code> is aligning in x/column direction.
+          and <code>aign-*</code> is aligning in y/row direction.<br>
+          <b>Properties for the grid container:</b><br>
+         <code>Justify-content</code> <code>align-content</code> <code>justify-items</code> <code>align-items</code><br>
+         <b>Properties for the grid items:</b><br>
+         <code>Justify-self</code> <code>align-self</code><br>
+         <b>Note:</b><br>
+         <code>place-*</code> is shortcut for x&y axis alignments.
+        </p>
+      </div>
+      <div class="wrapper">
+        <div class="gridContainer">
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+          <div class="item-6">6</div>
+          <div class="item-7">7</div>
+          <div class="item-8">8</div>
+          <div class="item-9">9</div>
+          <div class="item-10">10</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      height: 500px;
+      
+    }
+  </style>
+</body>
+</html>

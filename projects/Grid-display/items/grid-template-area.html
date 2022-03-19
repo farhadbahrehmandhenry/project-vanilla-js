@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid template area</title>
+</head>
+<link rel="stylesheet" href="./../style.css">
+<body>
+  <main>
+    <h1><a href="./../index.html">CSS Grid</a></h1>
+    <section class="gridSection gridSection--items"
+    style="grid-template-columns: 1fr;">
+
+      <div class="wrapper">
+        <h2>Grid template areas</h2>
+        <div class="gridContainer">
+          <div class="item header">Here is the header content</div>
+          <div class="item content">The page content here!</div>
+          <div class="item sidebar">sidebar there</div>
+          <div class="item footer">Here is the footer</div>
+        </div>
+        <p>Use <code>grid-template-areas</code> property to name the grid areas. These areas names can be referenced to position the grid items using <code>grid-area</code> property.</p>
+      </div>
+      <div class="properties">
+        <h2>Challenge to be implemented:</h2>
+        <img src="../images/grid-template-area.png" alt="">
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr minmax(300px, auto) 1fr;
+    }
+    
+    @media (min-width: 700px){
+      .gridContainer {
+      }
+    }
+
+    .header {
+      background-color: blueviolet;
+    }
+
+    .content {
+      background-color: #ecbe34;
+    }
+
+    .sidebar {
+      background-color:burlywood;
+    }
+
+    .footer {
+      background-color: cadetblue;
+    }
+  </style>
+</body>
+</html>

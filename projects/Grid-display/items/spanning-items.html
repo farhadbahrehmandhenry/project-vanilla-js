@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning items with span</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<body>
+  <main>
+    <h1><a href="../index.html">CSS Grid</a></h1>
+    <section class="gridSection gridSection--items">
+      <div class="wrapper">
+        <h2>Positioning items with span</h2>
+        <div class="gridContainer">
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+          <div class="item-6">6</div>
+          <div class="item-7">7</div>
+        </div>
+        <p>Use <code>span</code> keyword within <code>grid-column</code> or <code>grid-row</code> to define the item position and size</p>
+      </div>
+      <div class="properties">
+        <h2>Challenge to be implemented:</h2>
+        <img src="./spanning-items.png" alt="">
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item-1 {
+      background: var(--c-purple);
+    }
+  </style>
+</body>
+</html>

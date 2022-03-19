@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>auto-flow</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<body>
+
+  <main>
+    <h1><a href="../index.html">CSS Grid</a></h1>
+    <section class="gridSection">
+      <div class="properties">
+        <h2>auto-flow (dense)</h2>
+        <p>Once defining the grid for the container, By default the items flow in rows. Using <code>grid-auto-flow</code> can controll the flow of items. <br>
+          It takes values like: <br>
+          <code>grid-auto-flow: row;</code><br>
+          <code>grid-auto-flow: column;</code><br>
+          <code>grid-auto-flow: dense;</code><br>
+          <code>grid-auto-flow: row dense;</code><br>
+          <code>grid-auto-flow: column dense;</code><br>
+        </p>
+      </div>
+      <div class="wrapper">
+        <div class="gridContainer">
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+          <div class="item-6">6</div>
+          <div class="item-7">7</div>
+          <div class="item-8">8</div>
+          <div class="item-9">9</div>
+          <div class="item-10">10</div>
+          <div class="item-11">11</div>
+          <div class="item-12">12</div>
+          <div class="item-13">13</div>
+          <div class="item-14">14</div>
+          <div class="item-15">15</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      grid-template-columns:repeat(auto-fill,  minmax(80px, auto));
+      /* grid-template-rows: repeat(4, minmax(60px, auto)); */
+      gap: 5px 20px;
+    }
+    .item-2, .item-4, .item-7, .item-8 {
+      grid-column-start: 3;
+    }
+  </style>
+</body>
+</html>

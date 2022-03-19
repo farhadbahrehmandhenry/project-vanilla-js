@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid rows & columns</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+  <main>
+    <h1><a href="./index.html">CSS Grid</a></h1>
+    <section class="gridSection">
+      <div class="properties">
+        <h2>Grid rows & columns</h2>
+        <p>You can control how many columns and/or rows you want to set in your grid by using <br> <code>grid-template-columns</code> and <code> grid-template-rows</code>. 
+         <br> Usign <code>repeat()</code>function notation that you can repeat the track declaration for rows or columns. <br>
+         As well using <code>grid-template</code> shorthand property to define the Rows first, then the columns. <code>grid-template: rows / columns</code>
+         </p>
+      </div>
+      <div class="wrapper">
+        <div class="gridContainer">
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      grid-template: 50px 80px/ repeat(2, 1fr 40px);
+    }
+  </style>
+</body>
+</html>

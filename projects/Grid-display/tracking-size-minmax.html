@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>minmax()</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+  <main>
+    <h1><a href="./index.html">CSS Grid</a></h1>
+    <section class="gridSection">
+      <div class="properties">
+        <h2>minmax()</h2>
+        <p>Controlling the columns and rows sizes, there are two properties <code>grid-auto-rows</code> and <code>grid-auto-columns</code>. But for defining fixed size like 50px, not always proper for items that has large content. <br> Grid has a solution for this with the <code>minmax()</code> function. In our example here, i am using <code>minmax()</code> in the value of grid-auto-rows. This means automatically created rows will be a minimum of 50 pixels tall, and a maximum of auto. Using auto means that the size will look at the content size and will stretch to give space for the tallest item in a cell, in this row.</p>
+      </div>
+      <div class="wrapper">
+        <div class="gridContainer">
+          <div class="item-1">1</div>
+          <div class="item-2"><p>Controlling the columns and rows sizes, there are two properties <code>grid-auto-rows</code> and <code>grid-auto-columns</code>. But for defining fixed size like 50px, not always proper for items that has large content. <br> Grid has a solution for this with the <code>minmax()</code> function. In our example here, i am using <code>minmax()</code> in the value of grid-auto-rows. This means automatically created rows will be a minimum of 50 pixels tall, and a maximum of auto. Using auto means that the size will look at the content size and will stretch to give space for the tallest item in a cell, in this row.</p></div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      gap: 5px 20px;
+    }
+  </style>
+</body>
+</html>

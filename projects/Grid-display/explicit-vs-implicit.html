@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicit and implicit tracks</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+
+  <main>
+    <h1><a href="./index.html">CSS Grid</a></h1>
+    <section class="gridSection">
+      <div class="properties">
+          <h2>Explicit and implicit tracks</h2>
+          <p>Notice when you define only <code>grid-template-column</code> without defining rows, there are rows will be created automatically by the browser which is part of the <strong>implicit grid</strong>. Whereas the <strong>explicit</strong> grid consists of any rows and columns defined with <code>grid-template-columns</code> or <code> grid-template-rows</code><br>
+          So <strong>explicit</strong> track is defined by you. <br>
+          and <strong>implicit</strong> track is defined by the browse.
+          </p>
+      </div>
+      <div class="wrapper">
+        <div class="gridContainer">
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      gap: 5px 20px;
+    }
+  </style>
+</body>
+</html>

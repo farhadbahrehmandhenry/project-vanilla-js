@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning items with line numbers</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<body>
+  <main>
+    <h1><a href="../index.html">CSS Grid</a></h1>
+    <section class="gridSection gridSection--items">
+      <div class="wrapper">
+        <h2>Positioning items with line numbers</h2>
+        <div class="gridContainer">
+          <div class="item-1">1</div>
+          <div class="item-2">2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+          <div class="item-5">5</div>
+        </div>
+        <p>Use <code>grid-column-start</code> and <code>grid-column-end</code> For defining the column start & end.</p>
+        <p>Use <code>grid-row-start</code> and <code>grid-row-end</code> For defining the row start & end.</p>
+        <p>Try <code>grid-column</code> and <code>grid-row</code> properties as a shorthand properties.</p>
+      </div>
+      <div class="properties">
+        <h2>Challenge to be implemented:</h2>
+        <img class="gridSection__img" src="./positioning-with-line-numbers.png" alt="">
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    .item-1 {
+      background: #ba4df7;
+    }
+  </style>
+</body>
+</html>

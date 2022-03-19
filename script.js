@@ -32,6 +32,7 @@ var projects = [
   {name: 'Quote Generator', link: './projects/quote-generator-ok/index.html', image: './projects/quote-generator-ok/image/quoting.png'},
   {name: 'Picture In Picture', link: './projects/picture-in-picture-ok/index.html', image: './projects/picture-in-picture-ok/image/pictureInPicture.png'},
   {name: 'Joke Teller', link: './projects/joke-teller-ok/index.html', image: './projects/joke-teller-ok/image/joke.png'},
+  {name: 'Light Dark Mode', link: './projects/light-dark-mode-ok/index.html', image: './projects/light-dark-mode-ok/image/light-dark.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok/index.html', image: './configs/class-ok/class.png'},
 ];
 

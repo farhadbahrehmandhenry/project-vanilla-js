@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cards</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+  <main>
+    <h1><a href="./index.html">CSS Grid</a></h1>
+    <section class="gridSection">
+      <div class="properties">
+        <h2>auto-fill & auto-fit</h2>
+        <p> By trying <code>auto-fill</code> and <code>auto-fit</code> values for the first time, they might looks the same that we have flexible number of columns that achieve a responsive grid. but by inspecting the grid container and looking into the grid lines numbers, you see that: <br>
+          <code>auto-fill</code> that sorting the grid items next to each others and keep the columns lines to be automatically created based on the size left. The last column line (-1) will be the the end of the container.<br>
+          <code>auto-fit</code> Also sorting the grid items next to each others. However, looking into the grid column lines, will see that last line (-1) will end up on the last item we have in the container. <br>
+        </p>
+      </div>
+      <div class="wrapper">
+        <div class="gridContainer" style="resize: horizontal; overflow: auto;">
+          <div class="item-1">1</div>
+          <div class="item-2">More content in item 2</div>
+          <div class="item-3">3</div>
+          <div class="item-4">4</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    .gridContainer {
+      display: grid;
+      gap: 5px 20px;
+    }
+  </style>
+</body>
+</html>
