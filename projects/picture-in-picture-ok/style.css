@@ -71,7 +71,6 @@ body .btn-container .start-btn:active {
 
 body .btn-container .share-btn:disabled,
 body .btn-container .start-btn:disabled {
-  color: red;
   cursor: default;
 }
 /*# sourceMappingURL=style.css.map */

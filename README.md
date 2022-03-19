@@ -66,38 +66,40 @@
 | 29  | [Guess the Number](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/guess-the-number-ok)                 | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/guess-the-number-ok/index.html)         |
 | 30  | [Quote Generator](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/qoute-generator-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/qoute-generator-ok/index.html)          |
 | 31  | [Picture In Picture](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/picture-in-picture-ok)             | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/picture-in-picture-ok/index.html)       |
+| 32  | [Picture In Picture](https://github.com/farhadbahrehmandhenry/vanila-js-projects/tree/master/projects/joke-teller-ok)                    | [Live Demo](https://farhadbahrehmandhenry.github.io/vanila-js-projects/projects/joke-teller-ok/index.html)              |
 
 ## Useful websites
 
-| Topic       | Website                                                                                                                                            |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Live Code   | https://codepen.io/                                                                                                                                |
-| CSS-model   | https://www.bootstrapcdn.com/                                                                                                                      |
-| CSS-model   | https://material.io/resources                                                                                                                      |
-| CSS-color   | https://uxpro.cc/toolbox/visual-design/colors/                                                                                                     |
-| CSS-color   | https://webgradients.com/                                                                                                                          |
-| CSS-icon    | https://freeicons.io/                                                                                                                              |
-| CSS-icon    | https://www.toptal.com/designers/htmlarrows/                                                                                                       |
-| CSS-icon    | https://icons8.com/icons/set/delete                                                                                                                |
-| CSS-icon    | https://fontawesome.com/icons                                                                                                                      |
-| CSS-icon    | https://fontawesome.com/v3/icon/trash                                                                                                              |
-| CSS-icon    | https://cdnjs.com/libraries/font-awesome                                                                                                           |
-| CSS-icon    | https://lordicon.com/                                                                                                                              |
-| CSS-favicon | https://css-tricks.com/favicons-next-to-external-links/                                                                                            |
-| CSS-bg      | https://heropatterns.com/                                                                                                                          |
-| CSS-loading | https://loading.io/                                                                                                                                |
-| HTML-dom    | https://htmldom.dev/                                                                                                                               |
-| API         | https://jsonplaceholder.typicode.com/guide/                                                                                                        |
-| API         | https://randomuser.me/                                                                                                                             |
-| API         | http://random-word-api.herokuapp.com/home                                                                                                          |
-| API         | https://www.themealdb.com/api.php                                                                                                                  |
-| API         | https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API                                                                                    |
-| API         | https://react.rocks/tag/CRUD                                                                                                                       |
-| API         | https://lyrics.ovh/                                                                                                                                |
-| DOM-Element | https://www.javascripttutorial.net/javascript-dom/javascript-width-height/                                                                         |
-| Photo       | https://unsplash.com/                                                                                                                              |
-| Design      | https://github.com/bradtraversy/design-resources-for-developers                                                                                    |
-| JS          | https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts/?utm_source=udemy&utm_medium=coursecontent#call-stack-memory-heap |
+| Topic         | Website                                                                                                                                            |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Live Code     | https://codepen.io/                                                                                                                                |
+| CSS-model     | https://www.bootstrapcdn.com/                                                                                                                      |
+| CSS-model     | https://material.io/resources                                                                                                                      |
+| CSS-color     | https://uxpro.cc/toolbox/visual-design/colors/                                                                                                     |
+| CSS-color     | https://webgradients.com/                                                                                                                          |
+| CSS-icon      | https://freeicons.io/                                                                                                                              |
+| CSS-icon      | https://www.toptal.com/designers/htmlarrows/                                                                                                       |
+| CSS-icon      | https://icons8.com/icons/set/delete                                                                                                                |
+| CSS-icon      | https://fontawesome.com/icons                                                                                                                      |
+| CSS-icon      | https://fontawesome.com/v3/icon/trash                                                                                                              |
+| CSS-icon      | https://cdnjs.com/libraries/font-awesome                                                                                                           |
+| CSS-icon      | https://lordicon.com/                                                                                                                              |
+| CSS-favicon   | https://css-tricks.com/favicons-next-to-external-links/                                                                                            |
+| CSS-bg        | https://heropatterns.com/                                                                                                                          |
+| CSS-loading   | https://loading.io/                                                                                                                                |
+| photo editing | https://www.fotor.com/photo-editor-app/editor/basic                                                                                                |
+| HTML-dom      | https://htmldom.dev/                                                                                                                               |
+| API           | https://jsonplaceholder.typicode.com/guide/                                                                                                        |
+| API           | https://randomuser.me/                                                                                                                             |
+| API           | http://random-word-api.herokuapp.com/home                                                                                                          |
+| API           | https://www.themealdb.com/api.php                                                                                                                  |
+| API           | https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API                                                                                    |
+| API           | https://react.rocks/tag/CRUD                                                                                                                       |
+| API           | https://lyrics.ovh/                                                                                                                                |
+| DOM-Element   | https://www.javascripttutorial.net/javascript-dom/javascript-width-height/                                                                         |
+| Photo         | https://unsplash.com/                                                                                                                              |
+| Design        | https://github.com/bradtraversy/design-resources-for-developers                                                                                    |
+| JS            | https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts/?utm_source=udemy&utm_medium=coursecontent#call-stack-memory-heap |
 
 ## Useful vs code packages
 

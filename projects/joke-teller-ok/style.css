@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #003049;
+}
+
+body .container {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .ha {
+  position: absolute;
+  font-size: 2rem;
+  display: none;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+body .container #one {
+  right: 5rem;
+  top: 5rem;
+}
+
+body .container #two {
+  left: 6rem;
+  top: 8rem;
+}
+
+body .container #three {
+  right: 11rem;
+  top: 15rem;
+}
+
+body .container #four {
+  left: 10rem;
+  bottom: 8rem;
+}
+
+body .container #five {
+  right: 15rem;
+  bottom: 12rem;
+}
+
+body .container #six {
+  left: 3rem;
+  bottom: 3rem;
+}
+
+body .container .button-container {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .container .button-container .joke-bth {
+  width: 5rem;
+  min-height: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #227c9d;
+  color: white;
+}
+
+body .container .button-container .joke-bth:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+body .container .joke {
+  margin-top: 1rem;
+  color: white;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

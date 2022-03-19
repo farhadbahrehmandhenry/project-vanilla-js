@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003049;
+
+  .container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+    .ha {
+      position: absolute;
+      font-size: 2rem;
+      display: none;
+      animation: blink 1s infinite;
+    }
+
+    #one {
+      right: 5rem;
+      top: 5rem;
+    }
+
+    #two {
+      left: 6rem;
+      top: 8rem;
+    }
+
+    #three {
+      right: 11rem;
+      top: 15rem;
+    }
+
+    #four {
+      left: 10rem;
+      bottom: 8rem;
+    }
+
+    #five {
+      right: 15rem;
+      bottom: 12rem;
+    }
+
+    #six {
+      left: 3rem;
+      bottom: 3rem;
+    }
+
+    .button-container {
+      padding: 1rem;
+      border: 1px solid black;
+      border-radius: 5px;
+      position: absolute;
+      top: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .joke-bth {
+        width: 5rem;
+        min-height: 2rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #227c9d;
+        color: white;
+
+        &:active {
+          transform: translateY(1px);
+        }
+      }
+    }
+
+    .joke {
+      margin-top: 1rem;
+      color: white;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

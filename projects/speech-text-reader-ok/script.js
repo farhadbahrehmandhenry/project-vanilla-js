@@ -76,9 +76,6 @@ voiceDropdown.addEventListener('change', (e) => {
 });
 
 readBtn.addEventListener('click', () => {
-  console.log(textbox.innerText)
-  console.log(textbox.value)
-
   if (textbox.value) {
     message.text = textbox.value;
     speechSynthesis.speak(message);
