@@ -1,7 +1,7 @@
 var imageContainer = document.querySelector('.image-container');
 var loader = document.querySelector('.loader');
 
-var imageCount = 5;
+var imageCount = 30;
 var apiKey = 'aJxAMhnsvA4dAe5EsdeN5Ol6OrlX25fyZYO4jzrEYoA'
 var apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${imageCount}`;
 var photos = [];
@@ -14,7 +14,6 @@ var imageLoaded = () => {
 
   if (loadCount >= imageCount) {
     readyToShow = true;
-    imageCount = 30;
     loader.style.display = 'none';
     imageContainer.style.display = 'flex';
   }
