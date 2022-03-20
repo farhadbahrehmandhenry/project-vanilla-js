@@ -24,12 +24,13 @@ var getJoke = async() => {
   var response = await fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist,sexist,explicit&type=single');
   var jokeObject = await response.json();
 
-  readyToTellJoke = false;
   return jokeObject.joke;
 }
 
 jokeBtn.addEventListener('click', async() => {
   if (readyToTellJoke) {
+    readyToTellJoke = false;
+
     var joke = await getJoke();
 
     jokeText.innerText = joke;
