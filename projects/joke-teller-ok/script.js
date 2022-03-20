@@ -3,6 +3,7 @@ var jokeText = document.querySelector('.joke');
 var has = document.querySelectorAll('.ha');
 
 var message = new SpeechSynthesisUtterance();
+var readyToTellJoke = true;
 
 message.onend = () => {
   has.forEach(ha => {
@@ -15,20 +16,24 @@ message.onend = () => {
     });
 
     jokeText.innerHTML = '';
-  }, 3000)
+    readyToTellJoke = true;
+  }, 3000);
 }
 
 var getJoke = async() => {
   var response = await fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist,sexist,explicit&type=single');
   var jokeObject = await response.json();
 
+  readyToTellJoke = false;
   return jokeObject.joke;
 }
 
 jokeBtn.addEventListener('click', async() => {
-  var joke = await getJoke();
+  if (readyToTellJoke) {
+    var joke = await getJoke();
 
-  jokeText.innerText = joke;
-  message.text = joke;
-  speechSynthesis.speak(message);
+    jokeText.innerText = joke;
+    message.text = joke;
+    speechSynthesis.speak(message);
+  }
 });
