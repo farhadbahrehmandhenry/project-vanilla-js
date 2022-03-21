@@ -1,40 +1,40 @@
 var projectsContainer = document.querySelector('.projects-container');
 
 var projects = [
-  {name: 'Simple Calculator', link: './projects/calculator-ok/index.html', image: './projects/calculator-ok/calc.png'},
-  {name: 'Exchange Calculator', link: './projects/exchange-rate-calculator-ok/index.html', image: './projects/exchange-rate-calculator-ok/image/exchange.png'},
-  {name: 'Expense Tracker', link: './projects/expense-tracker-ok/index.html', image: './projects/expense-tracker-ok/image/expense.png'},
-  {name: 'Flash Cards', link: './projects/flash-card-ok/index.html', image: './projects/flash-card-ok/flash.png'},
-  {name: 'Flip Card', link: './projects/flip-card-ok/index.html', image: './projects/flip-card-ok/flip.png'},
-  {name: 'Form', link: './projects/form-ok/index.html', image: './projects/form-ok/form.png'},
-  {name: 'Full Page Scroll', link: './projects/full-page-scroll-effect-ok/index.html', image: './projects/full-page-scroll-effect-ok/full-page-scroll.png'},
-  {name: 'Hangman', link: './projects/hangman-ok/index.html', image: './projects/hangman-ok/hangman.png'},
-  {name: 'Infinite Scroll', link: './projects/infinite-scrolling-ok/index.html', image: './projects/infinite-scrolling-ok/infinite-scroll.png'},
-  {name: 'Infinite Scroll 2', link: './projects/infinite-scrolling-2-ok/index.html', image: './projects/infinite-scrolling-2-ok/image/infinite-2.png'},
-  {name: 'Meal Finder', link: './projects/meal-finder-ok/index.html', image: './projects/meal-finder-ok/image/meal.jpg'},
-  {name: 'Popup Modal', link: './projects/modal-ok/index.html', image: './projects/modal-ok/modal.png'},
-  {name: 'Movie Seat Booking', link: './projects/movie-seat-booking-app-ok/index.html', image: './projects/movie-seat-booking-app-ok/movie.png'},
-  {name: 'Music Player', link: './projects/music-player-ok/index.html', image: './projects/music-player-ok/images/music.png'},
-  {name: 'Simple Navbar', link: './projects/navbar-ok/index.html', image: './projects/navbar-ok/navbar.png'},
-  {name: 'Simple Navbar 2', link: './projects/navbar-2-ok/index.html', image: './projects/navbar-2-ok/image/navbar-2.png'},
-  {name: 'Parallex Effect', link: './projects/parallex-effect-ok/index.html', image: './projects/parallex-effect-ok/images/parallex.png'},
-  {name: 'Progress Bar', link: './projects/progress-bar-ok/index.html', image: './projects/progress-bar-ok/progress.png'},
-  {name: 'Simple Search Bar', link: './projects/search-bar-ok/index.html', image: './projects/search-bar-ok/search.png'},
-  {name: 'Speech Text Reader', link: './projects/speech-text-reader-ok/index.html', image: './projects/speech-text-reader-ok/image/speech.png'},
-  {name: 'Text Animation', link: './projects/text-animation-ok/index.html', image: './projects/text-animation-ok/text.png'},
-  {name: 'Typing Game', link: './projects/typing-game-ok/index.html', image: './projects/typing-game-ok/image/typing.png'},  
-  {name: 'Custom Video Player', link: './projects/video-player-ok/index.html', image: './projects/video-player-ok/image/video.png'},
-  {name: 'Lyric Finder', link: './projects/lyric-finder-ok/index.html', image: './projects/lyric-finder-ok/image/lyric.png'},
-  {name: 'Breath App', link: './projects/breathe-ok/index.html', image: './projects/breathe-ok/image/breathing.png'},
-  {name: 'Ping Pong', link: './projects/ping-pong-ok/index.html', image: './projects/ping-pong-ok/image/ping-pong.png'},
-  {name: 'New Year Countdown', link: './projects/new-year-ok/index.html', image: './projects/new-year-ok/image/year.png'},
-  {name: 'Sortable List', link: './projects/sortable-list-ok/index.html', image: './projects/sortable-list-ok/sortable-list.png'},
-  {name: 'Guess the Number', link: './projects/guess-the-number-ok/index.html', image: './projects/guess-the-number-ok/image/guess-number.png'},
-  {name: 'Quote Generator', link: './projects/quote-generator-ok/index.html', image: './projects/quote-generator-ok/image/quoting.png'},
-  {name: 'Picture In Picture', link: './projects/picture-in-picture-ok/index.html', image: './projects/picture-in-picture-ok/image/pictureInPicture.png'},
-  {name: 'Joke Teller', link: './projects/joke-teller-ok/index.html', image: './projects/joke-teller-ok/image/joke.png'},
-  {name: 'Light Dark Mode', link: './projects/light-dark-mode-ok/index.html', image: './projects/light-dark-mode-ok/image/light-dark.png'},
-  {name: 'Class Object Tutorial', link: './configs/class-ok/index.html', image: './configs/class-ok/class.png'},
+  {name: 'Simple Calculator', link: './projects/calculator-ok', image: '/calc.png'},
+  {name: 'Exchange Calculator', link: './projects/exchange-rate-calculator-ok', image: '/image/exchange.png'},
+  {name: 'Expense Tracker', link: './projects/expense-tracker-ok', image: '/image/expense.png'},
+  {name: 'Flash Cards', link: './projects/flash-card-ok', image: '/flash.png'},
+  {name: 'Flip Card', link: './projects/flip-card-ok', image: '/flip.png'},
+  {name: 'Form', link: './projects/form-ok', image: './projects/form-ok/form.png'},
+  {name: 'Full Page Scroll', link: './projects/full-page-scroll-effect-ok', image: '/full-page-scroll.png'},
+  {name: 'Hangman', link: './projects/hangman-ok', image: '/hangman.png'},
+  {name: 'Infinite Scroll', link: './projects/infinite-scrolling-ok', image: '/infinite-scroll.png'},
+  {name: 'Infinite Scroll 2', link: './projects/infinite-scrolling-2-ok', image: '/image/infinite-2.png'},
+  {name: 'Meal Finder', link: './projects/meal-finder-ok', image: '/image/meal.jpg'},
+  {name: 'Popup Modal', link: './projects/modal-ok', image: '/modal.png'},
+  {name: 'Movie Seat Booking', link: './projects/movie-seat-booking-app-ok', image: '/movie.png'},
+  {name: 'Music Player', link: './projects/music-player-ok', image: '/images/music.png'},
+  {name: 'Simple Navbar', link: './projects/navbar-ok', image: '/navbar.png'},
+  {name: 'Simple Navbar 2', link: './projects/navbar-2-ok', image: '/image/navbar-2.png'},
+  {name: 'Parallex Effect', link: './projects/parallex-effect-ok', image: '/images/parallex.png'},
+  {name: 'Progress Bar', link: './projects/progress-bar-ok', image: '/progress.png'},
+  {name: 'Simple Search Bar', link: './projects/search-bar-ok', image: '/search.png'},
+  {name: 'Speech Text Reader', link: './projects/speech-text-reader-ok', image: '/image/speech.png'},
+  {name: 'Text Animation', link: './projects/text-animation-ok', image: '/text.png'},
+  {name: 'Typing Game', link: './projects/typing-game-ok', image: '/image/typing.png'},  
+  {name: 'Custom Video Player', link: './projects/video-player-ok', image: '/image/video.png'},
+  {name: 'Lyric Finder', link: './projects/lyric-finder-ok', image: '/image/lyric.png'},
+  {name: 'Breath App', link: './projects/breathe-ok', image: '/image/breathing.png'},
+  {name: 'Ping Pong', link: './projects/ping-pong-ok', image: '/image/ping-pong.png'},
+  {name: 'New Year Countdown', link: './projects/new-year-ok', image: '/image/year.png'},
+  {name: 'Sortable List', link: './projects/sortable-list-ok', image: '/sortable-list.png'},
+  {name: 'Guess the Number', link: './projects/guess-the-number-ok', image: '/image/guess-number.png'},
+  {name: 'Quote Generator', link: './projects/quote-generator-ok', image: '/image/quoting.png'},
+  {name: 'Picture In Picture', link: './projects/picture-in-picture-ok', image: '/image/pictureInPicture.png'},
+  {name: 'Joke Teller', link: './projects/joke-teller-ok', image: '/image/joke.png'},
+  {name: 'Light Dark Mode', link: './projects/light-dark-mode-ok', image: '/image/light-dark.png'},
+  {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -44,13 +44,13 @@ window.addEventListener('DOMContentLoaded', () => {
     var projectTitleEl = document.createElement('div');
   
     projectEl.className = 'card';
-    projectImageEl.src = project.image;
+    projectImageEl.src = `${project.link}${project.image}`;
     projectTitleEl.className = 'card-name';
     projectTitleEl.innerText = project.name;
   
     projectEl.appendChild(projectImageEl);
     projectEl.appendChild(projectTitleEl);
-    projectEl.addEventListener('click', () => window.open(project.link, '_blank'));
+    projectEl.addEventListener('click', () => window.open(`${project.link}/index.html`, '_blank'));
 
     projectsContainer.appendChild(projectEl);
   });
