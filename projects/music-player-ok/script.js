@@ -11,7 +11,7 @@ var progress = document.querySelector('.progress');
 
 // add time
 // add song title
-// change button's bordeer's color on click
+// change button's border's color on click
 // add stop button 
 // reset animation on cover click 
 
@@ -23,6 +23,7 @@ var audios = [
 ];
 
 var currentIndex = 0;
+var pausedTime = 0
 
 cover.addEventListener('click', () => {
   cover.classList.toggle('visible');
@@ -52,6 +53,10 @@ audio.addEventListener('timeupdate', (e) => {
   var progressUnit = (width * currentTime) /duration;
 
   progress.style.width = `${progressUnit}px`;
+
+  if (currentTime === duration) {
+    nextAudio();
+  }
 });
 
 next.addEventListener('click', () => {
@@ -60,7 +65,8 @@ next.addEventListener('click', () => {
 
 prev.addEventListener('click', () => {
   progress.style.width = 0;
-
+  pausedTime = 0;
+  
   if (currentIndex > 0) {
     currentIndex--;
   }
@@ -82,10 +88,6 @@ progressContainer.addEventListener('click', (e) => {
   var {duration, currentTime} = audio;
 
   audio.currentTime = (duration * offsetX) / width;
-
-  if (currentTime === duration) {
-    nextAudio();
-  }
 });
 
 var playAudio = () => {
@@ -94,20 +96,29 @@ var playAudio = () => {
     play.querySelector('img').src = './icons/play.svg';
 
     audio.pause();
+    pausedTime = audio.currentTime;
   }
   else {
     musicPlayer.classList.add('play');
     play.querySelector('img').src = './icons/pause.svg';
 
     audio.src = `${audios[currentIndex].src}`
-    audio.play();
+
+    if (pausedTime !== 0) {
+      audio.currentTime = pausedTime;
+      audio.play();
+    } 
+    else {
+      audio.play();
+    }
   }
 }
 
 var nextAudio = () => {
   progress.style.width = 0;
+  pausedTime = 0;
 
-  if (currentIndex < audios.length) {
+  if (currentIndex < audios.length - 1) {
     currentIndex++;
   }
   else {
