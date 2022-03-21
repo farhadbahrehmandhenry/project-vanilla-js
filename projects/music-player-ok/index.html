@@ -18,10 +18,14 @@
     <div class="music-container">
       <div class="music-data">
         <div class="music-info">
-          <h4 class="music-title"></h4>
+          <div class="time-container">
+            <div class="current-time">00:00</div>
+            <div class="total-time">00:00</div>
+          </div>
           <div class="progress-container">
             <div class="progress"></div>
           </div>
+          <h4 class="music-title"></h4>
         </div>
         <audio src="./audio/bad.mp3" class="audio"></audio>
       </div>
@@ -34,6 +38,9 @@
         </button>
         <button class="next-btn">
           <img src="./icons/next.svg" alt="next">
+        </button>
+        <button class="stop-btn">
+          <img src="./icons/stop.svg" alt="next">
         </button>
       </div>
     </div>

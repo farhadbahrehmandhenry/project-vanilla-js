@@ -4,16 +4,20 @@ var musicPlayer = document.querySelector('.music-player');
 var navigation = document.querySelector('.navigation');
 var prev = document.querySelector('.prev-btn');
 var play = document.querySelector('.play-btn');
+var stop = document.querySelector('.stop-btn');
 var next = document.querySelector('.next-btn');
 var audio = document.querySelector('.audio');
 var progressContainer = document.querySelector('.progress-container');
 var progress = document.querySelector('.progress');
+var musicTitle = document.querySelector('.music-title');
+var totalTime = document.querySelector('.total-time');
+var currentTimeEl = document.querySelector('.current-time');
 
-// add time
-// add song title
 // change button's border's color on click
 // add stop button 
 // reset animation on cover click 
+// transition to right 
+// background color
 
 var audios = [
   {imgSrc: './images/dust.jpeg', src: './audio/another-one-bites-the-dust.mp3', name: 'Another One Bites the Dust'},
@@ -23,7 +27,9 @@ var audios = [
 ];
 
 var currentIndex = 0;
-var pausedTime = 0
+var pausedTime = 0;
+
+audio.src = audios[0].src;
 
 cover.addEventListener('click', () => {
   cover.classList.toggle('visible');
@@ -32,10 +38,14 @@ cover.addEventListener('click', () => {
   prev.classList.toggle('visible');
   play.classList.toggle('visible');
   next.classList.toggle('visible');
+  stop.classList.toggle('visible');
 
   setTimeout(() => {
     if (cover.classList.contains('visible')) {
       cover.src = `${audios[currentIndex].imgSrc}`;
+      musicTitle.innerText = audios[currentIndex].name;
+
+      totalTime.innerText = getTime(audio.duration);
     }
     else {
       cover.src = './images/cover.svg';
@@ -54,9 +64,10 @@ audio.addEventListener('timeupdate', (e) => {
 
   progress.style.width = `${progressUnit}px`;
 
-  if (currentTime === duration) {
-    nextAudio();
-  }
+  totalTime.innerText = duration !== NaN ? getTime(duration) : '00:00';
+  currentTimeEl.innerText = duration !== NaN ? getTime(currentTime) : '00:00';
+
+  if (currentTime === duration) nextAudio();
 });
 
 next.addEventListener('click', () => {
@@ -64,22 +75,7 @@ next.addEventListener('click', () => {
 });
 
 prev.addEventListener('click', () => {
-  progress.style.width = 0;
-  pausedTime = 0;
-  
-  if (currentIndex > 0) {
-    currentIndex--;
-  }
-  else {
-    currentIndex = audios.length - 1;
-  }
-
-  cover.src = `${audios[currentIndex].imgSrc}`;
-  audio.src = `${audios[currentIndex].src}`;
-
-  if (musicPlayer.classList.contains('play')) {
-    audio.play();
-  }
+  prevAudio();
 });
 
 progressContainer.addEventListener('click', (e) => {
@@ -125,10 +121,48 @@ var nextAudio = () => {
     currentIndex = 0;
   }
 
-  cover.src = `${audios[currentIndex].imgSrc}`;
-  audio.src = `${audios[currentIndex].src}`;
+  cover.src = audios[currentIndex].imgSrc;
+  audio.src = audios[currentIndex].src;
+  musicTitle.innerText = audios[currentIndex].name;
+
+  setTimeout(() => {
+    totalTime.innerText = audio.duration !== NaN ? getTime(audio.duration) : '00:00';
+  }, 200);
 
   if (musicPlayer.classList.contains('play')) {
     audio.play();
   }
+}
+
+var prevAudio = () => {
+  progress.style.width = 0;
+  pausedTime = 0;
+  
+  if (currentIndex > 0) {
+    currentIndex--;
+  }
+  else {
+    currentIndex = audios.length - 1;
+  }
+
+  cover.src = `${audios[currentIndex].imgSrc}`;
+  audio.src = `${audios[currentIndex].src}`;
+  musicTitle.innerText = audios[currentIndex].name;
+
+  setTimeout(() => {
+    totalTime.innerText = audio.duration !== NaN ? getTime(audio.duration) : '00:00';
+  }, 200);
+
+  if (musicPlayer.classList.contains('play')) {
+    audio.play();
+  }
+}
+
+var getTime = (time) => {
+  var sec = Math.floor(time % 60);
+  var min = Math.floor(time / 60);
+  var secString = sec <= 9 ? `0${sec}` : sec;
+  var minString = min <= 9 ? `0${min}` : min;
+
+  return `${minString}:${secString}` === 'NaN:NaN' ? '00:00' : `${minString}:${secString}`;
 }

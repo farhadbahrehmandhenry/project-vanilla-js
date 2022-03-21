@@ -35,7 +35,7 @@ body .music-player {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 25rem;
-  height: 7rem;
+  height: 10rem;
   background: transparent;
   border-bottom-left-radius: 200px;
   border-top-left-radius: 200px;
@@ -51,15 +51,15 @@ body .music-player {
 body .music-player .img-container {
   border-radius: 50%;
   position: absolute;
-  width: 9rem;
-  height: 9rem;
+  width: 11rem;
+  height: 11rem;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   opacity: 1;
 }
 
 body .music-player .img-container .cover {
-  width: 9rem;
-  height: 9rem;
+  width: 11rem;
+  height: 11rem;
   border-radius: 50%;
   cursor: pointer;
   background: transparent;
@@ -84,9 +84,9 @@ body .music-player .music-container {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -121,7 +121,19 @@ body .music-player .music-container .music-data .music-info {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+body .music-player .music-container .music-data .music-info .music-title {
+  margin-top: 0.3rem;
 }
 
 body .music-player .music-container .music-data .music-info .progress-container {
@@ -138,6 +150,19 @@ body .music-player .music-container .music-data .music-info .progress-container 
   height: 100%;
 }
 
+body .music-player .music-container .music-data .music-info .time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
 body .music-player .music-container .navigation {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -150,15 +175,19 @@ body .music-player .music-container .navigation {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50%;
-  padding-right: 1rem;
-  width: calc(100% - 14rem);
+  height: 30%;
+  width: calc(100% - 10rem);
+  margin-bottom: 0.5rem;
 }
 
+body .music-player .music-container .navigation .stop-btn {
+  margin-left: 1rem !important;
+}
+
+body .music-player .music-container .navigation .stop-btn,
 body .music-player .music-container .navigation .prev-btn,
 body .music-player .music-container .navigation .play-btn,
 body .music-player .music-container .navigation .next-btn {
-  width: 15%;
   opacity: 0.7;
   margin-left: 0.5rem;
   border-radius: 50%;
@@ -180,6 +209,7 @@ body .music-player .music-container .navigation .next-btn {
   transition: visibility 1s ease;
 }
 
+body .music-player .music-container .navigation .stop-btn.visible,
 body .music-player .music-container .navigation .play-btn.visible,
 body .music-player .music-container .navigation .prev-btn.visible,
 body .music-player .music-container .navigation .next-btn.visible {
