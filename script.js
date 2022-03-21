@@ -16,7 +16,7 @@ var projects = [
   {name: 'Movie Seat Booking', link: './projects/movie-seat-booking-app-ok/index.html', image: './projects/movie-seat-booking-app-ok/movie.png'},
   {name: 'Music Player', link: './projects/music-player-ok/index.html', image: './projects/music-player-ok/images/music.png'},
   {name: 'Simple Navbar', link: './projects/navbar-ok/index.html', image: './projects/navbar-ok/navbar.png'},
-  {name: 'Simple Navbar 2', link: './projects/navbar-ok/index.html', image: './projects/navbar-2-ok/navbar-2.png'},
+  {name: 'Simple Navbar 2', link: './projects/navbar-2-ok/index.html', image: './projects/navbar-2-ok/navbar-2.png'},
   {name: 'Parallex Effect', link: './projects/parallex-effect-ok/index.html', image: './projects/parallex-effect-ok/images/parallex.png'},
   {name: 'Progress Bar', link: './projects/progress-bar-ok/index.html', image: './projects/progress-bar-ok/progress.png'},
   {name: 'Simple Search Bar', link: './projects/search-bar-ok/index.html', image: './projects/search-bar-ok/search.png'},
