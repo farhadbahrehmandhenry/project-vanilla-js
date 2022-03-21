@@ -4,6 +4,7 @@ var has = document.querySelectorAll('.ha');
 
 var message = new SpeechSynthesisUtterance();
 var readyToTellJoke = true;
+var hasEnabledVoice = false;
 
 message.onend = () => {
   has.forEach(ha => {

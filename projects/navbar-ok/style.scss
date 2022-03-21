@@ -62,7 +62,6 @@ body {
         display: none;
       }
     }
-  
 
     .main-screen {
       height: 100%;
@@ -97,7 +96,7 @@ body {
           background-color: rgba(63, 27, 27, 0.5);
           margin: 0;
           transition: right 1s ease;
-          
+
           li {
             list-style: none;
             cursor: pointer;
@@ -120,8 +119,10 @@ body {
           align-items: center;
           cursor: pointer;
           margin-right: 2rem;
-  
-          .first-div, .second-div, .third-div {
+
+          .first-div,
+          .second-div,
+          .third-div {
             background-color: white;
             width: 2.3rem;
             margin-top: 0.2rem;
@@ -129,14 +130,14 @@ body {
             transition: all 1s ease;
           }
 
-          .first-div, .third-div {
+          .first-div,
+          .third-div {
             transition: transform 0.5s ease;
           }
 
           .first-div {
             &.opened {
               position: absolute;
-              top: 1.3rem;
               transform: rotate(45deg);
             }
           }
@@ -152,7 +153,6 @@ body {
           .third-div.opened {
             &.opened {
               position: absolute;
-              bottom: 1.5rem;
               transform: rotate(-45deg);
             }
           }

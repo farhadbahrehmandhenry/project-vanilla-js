@@ -1,0 +1,352 @@
+:root {
+  --primary-color: white;
+  --navColor1: #8ecae6;
+  --navColor2: #219ebc;
+  --navColor3: #023047;
+  --navColor4: #ffb703;
+  --navColor5: #fb8500;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  /* Rotate first bar */
+  /* Fade out the second bar */
+  /* Rotate last bar */
+}
+
+body .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+body .overlay nav {
+  width: 100%;
+  height: 100%;
+}
+
+body .overlay nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  list-style: none;
+}
+
+body .overlay nav ul li {
+  height: 20%;
+  min-width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .overlay nav ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .overlay nav ul li::before {
+  content: '';
+  width: 25vw;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+body .overlay nav ul li:hover::before {
+  opacity: 1;
+}
+
+body .overlay nav ul li:hover a {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+body .overlay nav ul #nav-1 {
+  background-color: var(--navColor1);
+}
+
+body .overlay nav ul #nav-2 {
+  background-color: var(--navColor2);
+}
+
+body .overlay nav ul #nav-3 {
+  background-color: var(--navColor3);
+}
+
+body .overlay nav ul #nav-4 {
+  background-color: var(--navColor4);
+}
+
+body .overlay nav ul #nav-5 {
+  background-color: var(--navColor5);
+}
+
+body .overlay nav ul #nav-1.slide-in {
+  -webkit-animation: slide-in 0.4s linear 0.2s both;
+          animation: slide-in 0.4s linear 0.2s both;
+}
+
+body .overlay nav ul #nav-2.slide-in {
+  -webkit-animation: slide-in 0.4s linear 0.4s both;
+          animation: slide-in 0.4s linear 0.4s both;
+}
+
+body .overlay nav ul #nav-3.slide-in {
+  -webkit-animation: slide-in 0.4s linear 0.6s both;
+          animation: slide-in 0.4s linear 0.6s both;
+}
+
+body .overlay nav ul #nav-4.slide-in {
+  -webkit-animation: slide-in 0.4s linear 0.8s both;
+          animation: slide-in 0.4s linear 0.8s both;
+}
+
+body .overlay nav ul #nav-5.slide-in {
+  -webkit-animation: slide-in 0.4s linear 1s both;
+          animation: slide-in 0.4s linear 1s both;
+}
+
+body .overlay nav ul #nav-1.slide-out {
+  -webkit-animation: slide-out 0.4s linear 0.5s both;
+          animation: slide-out 0.4s linear 0.5s both;
+}
+
+body .overlay nav ul #nav-2.slide-out {
+  -webkit-animation: slide-out 0.4s linear 0.4s both;
+          animation: slide-out 0.4s linear 0.4s both;
+}
+
+body .overlay nav ul #nav-3.slide-out {
+  -webkit-animation: slide-out 0.4s linear 0.3s both;
+          animation: slide-out 0.4s linear 0.3s both;
+}
+
+body .overlay nav ul #nav-4.slide-out {
+  -webkit-animation: slide-out 0.4s linear 0.2s both;
+          animation: slide-out 0.4s linear 0.2s both;
+}
+
+body .overlay nav ul #nav-5.slide-out {
+  -webkit-animation: slide-out 0.4s linear 0.1s both;
+          animation: slide-out 0.4s linear 0.1s both;
+}
+
+body .overlay.in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+body .overlay.out {
+  -webkit-transition: all 0.5s 0.5s ease-in-out;
+  transition: all 0.5s 0.5s ease-in-out;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+body section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+body #home {
+  background-color: var(--navColor1);
+  background-image: url("./image/back.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+body #home a {
+  position: absolute;
+  z-index: 2;
+  top: 1.5rem;
+  left: 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #9b2226;
+}
+
+body #about {
+  background-color: var(--navColor2);
+}
+
+body #skills {
+  background-color: var(--navColor3);
+}
+
+body #projects {
+  background-color: var(--navColor4);
+}
+
+body #contact {
+  background-color: var(--navColor5);
+}
+
+body .bars-container {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+}
+
+body .bar1,
+body .bar2,
+body .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 4px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-2px, 6px);
+}
+
+body .change .bar2 {
+  opacity: 0;
+}
+
+body .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-4px, -8px);
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,268 @@
+:root {
+  --primary-color: white;
+  --navColor1: #8ecae6;
+  --navColor2: #219ebc;
+  --navColor3: #023047;
+  --navColor4: #ffb703;
+  --navColor5: #fb8500;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    transform: translateX(-100vw);
+
+    nav {
+      width: 100%;
+      height: 100%;
+
+      ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        list-style: none;
+
+        li {
+          height: 20%;
+          min-width: 100%;
+          cursor: pointer;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          a {
+            text-decoration: none;
+            color: white;
+            letter-spacing: 4px;
+            transition: all 0.5s ease;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &::before {
+            content: '';
+            width: 25vw;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+          }
+
+          &:hover {
+            &::before {
+              opacity: 1;
+            }
+
+            a {
+              transform: scale(0.9);
+            }
+          }
+        }
+
+        #nav-1 {
+          background-color: var(--navColor1);
+        }
+
+        #nav-2 {
+          background-color: var(--navColor2);
+        }
+
+        #nav-3 {
+          background-color: var(--navColor3);
+        }
+
+        #nav-4 {
+          background-color: var(--navColor4);
+        }
+
+        #nav-5 {
+          background-color: var(--navColor5);
+        }
+
+        #nav-1.slide-in {
+          animation: slide-in 0.4s linear 0.2s both;
+        }
+
+        #nav-2.slide-in {
+          animation: slide-in 0.4s linear 0.4s both;
+        }
+
+        #nav-3.slide-in {
+          animation: slide-in 0.4s linear 0.6s both;
+        }
+
+        #nav-4.slide-in {
+          animation: slide-in 0.4s linear 0.8s both;
+        }
+
+        #nav-5.slide-in {
+          animation: slide-in 0.4s linear 1s both;
+        }
+
+        #nav-1.slide-out {
+          animation: slide-out 0.4s linear 0.5s both;
+        }
+
+        #nav-2.slide-out {
+          animation: slide-out 0.4s linear 0.4s both;
+        }
+
+        #nav-3.slide-out {
+          animation: slide-out 0.4s linear 0.3s both;
+        }
+
+        #nav-4.slide-out {
+          animation: slide-out 0.4s linear 0.2s both;
+        }
+
+        #nav-5.slide-out {
+          animation: slide-out 0.4s linear 0.1s both;
+        }
+      }
+    }
+  }
+
+  .overlay.in {
+    display: flex;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(0);
+  }
+
+  .overlay.out {
+    transition: all 0.5s 0.5s ease-in-out;
+    transform: translateX(-100vw);
+  }
+
+  section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+  }
+
+  #home {
+    background-color: var(--navColor1);
+    background-image: url('./image/back.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    a {
+      position: absolute;
+      z-index: 2;
+      top: 1.5rem;
+      left: 1.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #9b2226;
+    }
+  }
+
+  #about {
+    background-color: var(--navColor2);
+  }
+
+  #skills {
+    background-color: var(--navColor3);
+  }
+
+  #projects {
+    background-color: var(--navColor4);
+  }
+
+  #contact {
+    background-color: var(--navColor5);
+  }
+
+  .bars-container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-2px, 6px);
+  }
+
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-4px, -8px);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

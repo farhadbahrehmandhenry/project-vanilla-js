@@ -169,7 +169,9 @@ body .app-container .main-screen img {
     cursor: pointer;
     margin-right: 2rem;
   }
-  body .app-container .navbar .hamburger .first-div, body .app-container .navbar .hamburger .second-div, body .app-container .navbar .hamburger .third-div {
+  body .app-container .navbar .hamburger .first-div,
+  body .app-container .navbar .hamburger .second-div,
+  body .app-container .navbar .hamburger .third-div {
     background-color: white;
     width: 2.3rem;
     margin-top: 0.2rem;
@@ -177,7 +179,8 @@ body .app-container .main-screen img {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
   }
-  body .app-container .navbar .hamburger .first-div, body .app-container .navbar .hamburger .third-div {
+  body .app-container .navbar .hamburger .first-div,
+  body .app-container .navbar .hamburger .third-div {
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -185,7 +188,6 @@ body .app-container .main-screen img {
   }
   body .app-container .navbar .hamburger .first-div.opened {
     position: absolute;
-    top: 1.3rem;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
@@ -197,7 +199,6 @@ body .app-container .main-screen img {
   }
   body .app-container .navbar .hamburger .third-div.opened.opened {
     position: absolute;
-    bottom: 1.5rem;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
