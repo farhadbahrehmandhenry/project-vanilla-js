@@ -87,6 +87,7 @@
 | CSS-icon            | https://cdnjs.com/libraries/font-awesome                                         |
 | CSS-icon            | https://lordicon.com/                                                            |
 | CSS-favicon         | https://css-tricks.com/favicons-next-to-external-links/                          |
+| favicon             | https://s2.googleusercontent.com/s2/favicons?domain=<url>                        |
 | CSS-bg              | https://heropatterns.com/                                                        |
 | CSS-loading         | https://loading.io/                                                              |
 | free videos         | https://pixabay.com/                                                             |
