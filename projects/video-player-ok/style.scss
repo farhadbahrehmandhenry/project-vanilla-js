@@ -11,64 +11,101 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
 
-  .video {
+  .container {
     width: 50%;
     height: 50%;
-    background-color: black !important;
-    cursor: pointer;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 2rem;
-  }
+    position: relative;
+    overflow: hidden;
 
-  .controls {
-    background: #333;
-    color: #fff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-    width: 50%;
-
-    .btn {
-      border: 0;
-      background: transparent;
+    .video {
+      width: 100%;
+      height: 100%;
+      background-color: black !important;
       cursor: pointer;
-      margin-right: 10px;
-      min-width: 2rem;
-      &:focus {
-        outline: 0;
+      border-radius: 10px;
+    }
+
+    .controls {
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+      width: 100%;
+      height: 5rem;
+      position: absolute;
+      bottom: -5rem;
+      transition: bottom 0.5s ease;
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 0.5rem;
+
+        .btn {
+          border: 0;
+          background: transparent;
+          cursor: pointer;
+          margin-right: 10px;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+
+        .volume {
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        .fullscreen,
+        .speed {
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+        .fa-expand {
+        }
+
+        .fa-play {
+          color: green;
+        }
+
+        .fa-stop {
+          color: red;
+        }
+
+        .fa-pause {
+          color: white;
+        }
+
+        .time-stamp {
+          color: white;
+          font-weight: bold;
+          margin-left: 10px;
+        }
       }
     }
 
-    .fa-play {
-      color: green;
-    }
-
-    .fa-stop {
-      color: red;
-    }
-
-    .fa-pause {
-      color: white;
-    }
-
-    .time-stamp {
-      color: white;
-      font-weight: bold;
-      margin-left: 10px;
+    .controls.show {
+      bottom: 0;
     }
   }
-}
 
-@media screen and (max-width: 800px) {
-  .video,
-  .controls {
-    width: 90%;
+  @media screen and (max-width: 800px) {
+    .container {
+      width: 90%;
+    }
   }
 }

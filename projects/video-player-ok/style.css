@@ -21,22 +21,28 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
 }
 
-body .video {
+body .container {
   width: 50%;
   height: 50%;
-  background-color: black !important;
-  cursor: pointer;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
-body .controls {
-  background: #333;
+body .container .video {
+  width: 100%;
+  height: 100%;
+  background-color: black !important;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+body .container .controls {
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -49,43 +55,83 @@ body .controls {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
-  width: 50%;
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  bottom: -5rem;
+  -webkit-transition: bottom 0.5s ease;
+  transition: bottom 0.5s ease;
 }
 
-body .controls .btn {
+body .container .controls .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+body .container .controls .buttons .btn {
   border: 0;
   background: transparent;
   cursor: pointer;
   margin-right: 10px;
-  min-width: 2rem;
 }
 
-body .controls .btn:focus {
+body .container .controls .buttons .btn:focus {
   outline: 0;
 }
 
-body .controls .fa-play {
+body .container .controls .buttons .volume {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+body .container .controls .buttons .fullscreen,
+body .container .controls .buttons .speed {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+body .container .controls .buttons .fa-play {
   color: green;
 }
 
-body .controls .fa-stop {
+body .container .controls .buttons .fa-stop {
   color: red;
 }
 
-body .controls .fa-pause {
+body .container .controls .buttons .fa-pause {
   color: white;
 }
 
-body .controls .time-stamp {
+body .container .controls .buttons .time-stamp {
   color: white;
   font-weight: bold;
   margin-left: 10px;
 }
 
+body .container .controls.show {
+  bottom: 0;
+}
+
 @media screen and (max-width: 800px) {
-  .video,
-  .controls {
+  body .container {
     width: 90%;
   }
 }
