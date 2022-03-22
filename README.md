@@ -58,22 +58,23 @@
 | 21  | [Text Animation](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/text-animation-ok)                     | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/text-animation-ok/index.html)           |
 | 22  | [Typing Game](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/typing-game-ok)                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/typing-game-ok/index.html)              |
 | 23  | [Video Player](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/video-player-ok)                         | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/video-player-ok/index.html)             |
-| 24  | [Class Tutorial](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/configs/class-ok)                               | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/configs/class-ok/index.html)                     |
-| 25  | [Lyric Finder](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/lyric-finder-ok)                         | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/lyric-finder-ok/index.html)             |
-| 26  | [Breathing App](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/breathe-ok)                             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/breathe-ok/index.html)                  |
-| 27  | [Ping POng](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/ping-pong-ok)                               | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/ping-pong-ok/index.html)                |
-| 28  | [New Year Countdown](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/new-year-ok)                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/new-year-ok/index.html)                 |
-| 29  | [Sortable List](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/sortable-list-ok)                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/sortable-list-ok/index.html)            |
-| 30  | [Guess the Number](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/guess-the-number-ok)                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/guess-the-number-ok/index.html)         |
-| 31  | [Quote Generator](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/qoute-generator-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/qoute-generator-ok/index.html)          |
-| 32  | [Picture In Picture](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/picture-in-picture-ok)             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/picture-in-picture-ok/index.html)       |
-| 33  | [Joke Teller](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/joke-teller-ok)                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/joke-teller-ok/index.html)              |
-| 34  | [Light Dark Mode](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/light-dark-mode-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/light-dark-mode-ok/index.html)          |
+| 24  | [Video Background](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/video-background-ok)                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/video-background-ok/index.html)         |
+| 25  | [Class Tutorial](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/configs/class-ok)                               | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/configs/class-ok/index.html)                     |
+| 26  | [Lyric Finder](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/lyric-finder-ok)                         | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/lyric-finder-ok/index.html)             |
+| 27  | [Breathing App](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/breathe-ok)                             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/breathe-ok/index.html)                  |
+| 28  | [Ping POng](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/ping-pong-ok)                               | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/ping-pong-ok/index.html)                |
+| 29  | [New Year Countdown](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/new-year-ok)                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/new-year-ok/index.html)                 |
+| 30  | [Sortable List](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/sortable-list-ok)                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/sortable-list-ok/index.html)            |
+| 31  | [Guess the Number](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/guess-the-number-ok)                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/guess-the-number-ok/index.html)         |
+| 32  | [Quote Generator](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/qoute-generator-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/qoute-generator-ok/index.html)          |
+| 33  | [Picture In Picture](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/picture-in-picture-ok)             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/picture-in-picture-ok/index.html)       |
+| 34  | [Joke Teller](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/joke-teller-ok)                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/joke-teller-ok/index.html)              |
+| 35  | [Light Dark Mode](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/light-dark-mode-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/light-dark-mode-ok/index.html)          |
 
 ## Useful websites
 
 | Topic               | Website                                                                          |
-| ------------------- | -------------------------------------------------------------------------------- | --- |
+| ------------------- | -------------------------------------------------------------------------------- |
 | Live Code           | https://codepen.io/                                                              |
 | CSS-model           | https://www.bootstrapcdn.com/                                                    |
 | CSS-model           | https://material.io/resources                                                    |
@@ -82,12 +83,14 @@
 | CSS-icon            | https://freeicons.io/                                                            |
 | CSS-icon            | https://www.toptal.com/designers/htmlarrows/                                     |
 | CSS-icon            | https://icons8.com/icons/set/delete                                              |
-| CSS-icon            | https://fontawesome.com/icons                                                    |     |
+| CSS-icon            | https://fontawesome.com/icons                                                    |
 | CSS-icon            | https://cdnjs.com/libraries/font-awesome                                         |
 | CSS-icon            | https://lordicon.com/                                                            |
 | CSS-favicon         | https://css-tricks.com/favicons-next-to-external-links/                          |
 | CSS-bg              | https://heropatterns.com/                                                        |
 | CSS-loading         | https://loading.io/                                                              |
+| free videos         | https://pixabay.com/                                                             |
+| resize videos       | https://www.youcompress.com/                                                     |
 | animation on scroll | https://michalsnik.github.io/aos/                                                |
 | photo editing       | https://www.fotor.com/photo-editor-app/editor/basic                              |
 | illustration        | https://undraw.co/illustrations                                                  |
