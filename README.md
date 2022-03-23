@@ -109,6 +109,7 @@
 | Photo               | https://unsplash.com/                                                            |
 | Design              | https://github.com/bradtraversy/design-resources-for-developers                  |
 | JS                  | https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts |
+| Git learning        | https://learngitbranching.js.org/                                                |
 
 ## articles =>
 
