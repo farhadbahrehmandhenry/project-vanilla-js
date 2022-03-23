@@ -5,6 +5,10 @@ var progress = document.querySelector('#progress');
 var timeStamp = document.querySelector('#time-stamp');
 var container = document.querySelector('.container');
 var controls = document.querySelector('.controls');
+// volume
+// full screen
+// stop
+//speed rate
 
 var toggleVideoStatus = () => {
   if (video.paused) {

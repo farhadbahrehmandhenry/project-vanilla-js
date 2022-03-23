@@ -83,7 +83,7 @@ body .container .controls .buttons {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 body .container .controls .buttons .btn {

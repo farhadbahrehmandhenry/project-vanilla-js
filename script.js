@@ -35,8 +35,10 @@ var projects = [
   {name: 'Picture In Picture', link: './projects/picture-in-picture-ok', image: '/image/pictureInPicture.png'},
   {name: 'Joke Teller', link: './projects/joke-teller-ok', image: '/image/joke.png'},
   {name: 'Light Dark Mode', link: './projects/light-dark-mode-ok', image: '/image/light-dark.png'},
+  {name: 'Rock Paper Scissors', link: './projects/rock-paper-scissors-ok', image: '/image/rock-paper-scissors.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
+
 
 window.addEventListener('DOMContentLoaded', () => {
   projects.forEach(project => {

@@ -70,11 +70,13 @@
 | 33  | [Picture In Picture](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/picture-in-picture-ok)             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/picture-in-picture-ok/index.html)       |
 | 34  | [Joke Teller](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/joke-teller-ok)                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/joke-teller-ok/index.html)              |
 | 35  | [Light Dark Mode](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/light-dark-mode-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/light-dark-mode-ok/index.html)          |
+| 36  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
 
 ## Useful websites
 
 | Topic               | Website                                                                          |
 | ------------------- | -------------------------------------------------------------------------------- |
+| ideas               | https://www.cssscript.com/                                                       |
 | Live Code           | https://codepen.io/                                                              |
 | CSS-model           | https://www.bootstrapcdn.com/                                                    |
 | CSS-model           | https://material.io/resources                                                    |
@@ -114,6 +116,7 @@
 
 https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript
 https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/learn/lecture/20746918?start=995#notes
+dynamiclly import => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
 
 ## Useful vs code packages
 

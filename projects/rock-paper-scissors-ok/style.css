@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Nunito&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1faee;
+}
+
+body .container {
+  min-height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .title {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+body .container .opponents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+
+body .container .opponents .you-container,
+body .container .opponents .robot-container {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .opponents .you-container h2,
+body .container .opponents .robot-container h2 {
+  margin-bottom: 1rem;
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+body .container .opponents .you-container .you-scores,
+body .container .opponents .you-container .robot-scores,
+body .container .opponents .robot-container .you-scores,
+body .container .opponents .robot-container .robot-scores {
+  width: 80%;
+  height: 2rem;
+  border: 1px solid black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  background-color: #eae2b7;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .container .opponents .you-container .you-scores .score,
+body .container .opponents .you-container .robot-scores .score,
+body .container .opponents .robot-container .you-scores .score,
+body .container .opponents .robot-container .robot-scores .score {
+  width: 20%;
+  height: 100%;
+  background-color: #43aa8b;
+  margin-right: 1px;
+}
+
+body .container .opponents .you-container .you-scores .score:first-child,
+body .container .opponents .you-container .robot-scores .score:first-child,
+body .container .opponents .robot-container .you-scores .score:first-child,
+body .container .opponents .robot-container .robot-scores .score:first-child {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+body .container .opponents .you-container .actions,
+body .container .opponents .robot-container .actions {
+  margin-top: 1rem;
+}
+
+body .container .opponents .you-container .actions .rock.selected,
+body .container .opponents .you-container .actions .paper.selected,
+body .container .opponents .you-container .actions .scissors.selected,
+body .container .opponents .robot-container .actions .rock.selected,
+body .container .opponents .robot-container .actions .paper.selected,
+body .container .opponents .robot-container .actions .scissors.selected {
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
+}
+
+body .container .opponents .you-container {
+  border-right: 1px dashed black;
+}
+
+body .container .opponents .you-container .actions .rock,
+body .container .opponents .you-container .actions .paper,
+body .container .opponents .you-container .actions .scissors {
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body .container .opponents .robot-container .actions {
+  min-height: 309px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .opponents .robot-container .actions .action {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body .container .opponents .robot-container .actions .action.selected {
+  -webkit-transform: translateX(-90%) scaleX(-1);
+          transform: translateX(-90%) scaleX(-1);
+}
+
+@media screen and (max-width: 500px) {
+  .robot-container .actions .action.selected {
+    -webkit-transform: translateX(-40%) scaleX(-1) !important;
+            transform: translateX(-40%) scaleX(-1) !important;
+  }
+  .you-container .actions .rock.selected,
+  .you-container .actions .paper.selected,
+  .you-container .actions .scissors.selected {
+    -webkit-transform: translateX(40%) !important;
+            transform: translateX(40%) !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
