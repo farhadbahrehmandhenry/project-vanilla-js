@@ -18,6 +18,17 @@ var updateScore = (element) => {
   element.appendChild(score);
 }
 
+var clearScores = () => {
+  while (robotScoresEl.firstChild) {
+    robotScoresEl.removeChild(robotScoresEl.firstChild);
+  }
+  while (youScoresEl.firstChild) {
+    youScoresEl.removeChild(youScoresEl.firstChild);
+  }
+
+  actionImg.src = './image/robot.png';
+}
+
 actionButtons.forEach((btn) => {
   btn.addEventListener('click', () => {
     if (!Array.from(actionButtons).some(btn => btn.className.includes('selected'))) {
@@ -31,7 +42,6 @@ actionButtons.forEach((btn) => {
         (action.name === 'scissors' && btnName === 'paper') || 
         (action.name === 'paper' && btnName === 'rock');
 
-      actionImg.src = '';
       actionImg.src = action.image;
       actionEl.classList.add('selected');
 
@@ -43,14 +53,17 @@ actionButtons.forEach((btn) => {
     setTimeout(() => {
       btn.classList.remove('selected');
       actionEl.classList.remove('selected');
+      actionImg.src = './image/robot.png';
     }, 1000);
 
     setTimeout(() => {
       if (Array.from(document.querySelectorAll('.robot-scores .score')).length === 5) {
-        alert('Robot wins!')
+        alert('Robot wins!');
+        clearScores();
       } 
-      else if (Array.from(youScoresEl.querySelectorAll('.you-scores .score')).length === 5) {
-        alert('You win!')
+      else if (Array.from(document.querySelectorAll('.you-scores .score')).length === 5) {
+        alert('You win!');
+        clearScores();
       }
     }, 300);
   });

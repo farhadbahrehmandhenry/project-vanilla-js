@@ -115,7 +115,6 @@ body .container .opponents .robot-container .robot-scores .score {
   width: 20%;
   height: 100%;
   background-color: #43aa8b;
-  margin-right: 1px;
 }
 
 body .container .opponents .you-container .you-scores .score:first-child,
@@ -124,6 +123,13 @@ body .container .opponents .robot-container .you-scores .score:first-child,
 body .container .opponents .robot-container .robot-scores .score:first-child {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+}
+
+body .container .opponents .you-container .you-scores .score:not(:last-child),
+body .container .opponents .you-container .robot-scores .score:not(:last-child),
+body .container .opponents .robot-container .you-scores .score:not(:last-child),
+body .container .opponents .robot-container .robot-scores .score:not(:last-child) {
+  margin-right: 2px;
 }
 
 body .container .opponents .you-container .actions,
@@ -154,7 +160,7 @@ body .container .opponents .you-container .actions .scissors {
 }
 
 body .container .opponents .robot-container .actions {
-  min-height: 309px;
+  min-height: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
