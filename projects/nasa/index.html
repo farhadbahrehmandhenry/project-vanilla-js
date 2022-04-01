@@ -11,8 +11,21 @@
   <title>NASA</title>
 </head>
 <body>
-  <div class="loader hidden">
-    <img src="./image/loading.svg" alt="loading">
+  <div class="loader">
+    <img class="loader" src="./image/loading.svg" alt="loading"> 
+  </div>
+  <div class="navigation-container">
+    <div class="main-navigation">
+      <button class="favorite-bth">FAVORITES</button>
+      <button class="load-more-btn">LOAD MORE</button>
+    </div>
+    <div class="favorite-navigation">
+      <button class="back-btn">BACK</button>
+    </div>
+  </div>
+  <div class="results-container">
+    <div class="main-container"></div>
+    <div class="favorite-container"></div>
   </div>
   <script src="./script.js"></script>
 </body>
