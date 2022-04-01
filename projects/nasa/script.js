@@ -14,9 +14,12 @@ window.addEventListener('DOMContentLoaded', async() => {
   var apiKey = 'DEMO_KEY';
   var count = 10;
   var url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
+
   localStorage.getItem('mainCards') !== null ? getPhotosFromLocalStorage() : await getPhotosFromAPI();
 
-  function renderCards(cards) {
+  function renderCards(cards, parentEl) {
+    parentEl.innerHTML = '';
+
     cards.forEach(card => {
       var cardElement = document.createElement('div');
       var imageAncherElement = document.createElement('a');
@@ -42,7 +45,11 @@ window.addEventListener('DOMContentLoaded', async() => {
       imageAncherElement.setAttribute('target', '_blank');
       imageAncherElement.href = card.hdurl;
       descriptionElement.title = card.explanation;
-      
+
+      if (card.favorite) {
+        addBtnContainer.classList.add('added');
+      }
+
       imageAncherElement.appendChild(imageElement);
       descriptionElement.appendChild(descriptionP);
       addBtnContainer.appendChild(addBtnElement);
@@ -50,13 +57,49 @@ window.addEventListener('DOMContentLoaded', async() => {
       cardElement.appendChild(titleElement);
       cardElement.appendChild(descriptionElement);
       cardElement.appendChild(addBtnContainer);
-      mainContainer.appendChild(cardElement);
-
+      parentEl.appendChild(cardElement);
 
       cardElement.addEventListener('click', (e) => {
-        addBtnContainer.classList.toggle('added');
-        localStorage.setItem('favoriteCards', card);   
-        
+        var mainCards = JSON.parse(localStorage.getItem('mainCards'));
+        var favoriteCards = localStorage.getItem('favoriteCards') !== null ? JSON.parse(localStorage.getItem('favoriteCards')) : [];
+        var updatedMainCards;
+
+        if (addBtnContainer.classList.contains('added')) {
+          addBtnContainer.classList.remove('added');
+
+          if (favoriteCards.some(c => c.copyright === card.copyright)) {
+            var newFavorites = favoriteCards.filter(c => c.copyright !== card.copyright);
+            localStorage.setItem('favoriteCards', JSON.stringify(newFavorites));   
+          }
+
+          var updatedMainCards = mainCards.map(c => {
+            if (c.copyright === card.copyright) {
+              c.favorite = false;
+            }
+  
+            return c;
+          });
+        }
+        else {
+          addBtnContainer.classList.add('added');
+
+          if (!favoriteCards.some(c => c.copyright === card.copyright)) {
+            favoriteCards.push(card);
+            localStorage.setItem('favoriteCards', JSON.stringify(favoriteCards));   
+          }
+
+          var updatedMainCards = mainCards.map(c => {
+            if (c.copyright === card.copyright) {
+              c.favorite = true;
+            }
+  
+            return c;
+          });
+        }
+
+        localStorage.setItem('mainCards', JSON.stringify(updatedMainCards));   
+        renderCards(updatedMainCards, mainContainer);
+
         e.stopPropagation();
       });
 
@@ -79,7 +122,7 @@ window.addEventListener('DOMContentLoaded', async() => {
   }
 
   function getPhotosFromLocalStorage() {
-    renderCards(JSON.parse(localStorage.getItem('mainCards')));
+    renderCards(JSON.parse(localStorage.getItem('mainCards')), mainContainer);
   }
   
   async function getPhotosFromAPI() {
@@ -92,7 +135,7 @@ window.addEventListener('DOMContentLoaded', async() => {
     localStorage.setItem('mainCards', JSON.stringify(cardsData));
 
     cardsData.then(cards => {
-      renderCards(cards);
+      renderCards(cards, mainContainer);
 
       resultsContainer.style.display = 'flex';
       loader.style.display = 'none';
@@ -104,6 +147,10 @@ window.addEventListener('DOMContentLoaded', async() => {
     favoritesContainer.style.display = 'flex';
     mainNavigation.style.display = 'none';
     favoriteNavigation.style.display = 'flex';
+
+    var favoriteCards = localStorage.getItem('favoriteCards') !== null ? JSON.parse(localStorage.getItem('favoriteCards')) : [];
+
+    renderCards(favoriteCards, favoritesContainer);
   });
 
   backBtn.addEventListener('click', () => {

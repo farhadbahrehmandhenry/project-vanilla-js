@@ -104,7 +104,8 @@ body .results-container {
   display: flex;
 }
 
-body .results-container .main-container {
+body .results-container .main-container,
+body .results-container .favorite-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,13 +118,14 @@ body .results-container .main-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1.5rem;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   overflow: scroll;
   display: flex;
 }
 
-body .results-container .main-container .card {
+body .results-container .main-container .card,
+body .results-container .favorite-container .card {
   width: 15rem;
   height: 19rem;
   display: -webkit-box;
@@ -150,7 +152,8 @@ body .results-container .main-container .card {
   margin-bottom: 1rem;
 }
 
-body .results-container .main-container .card img {
+body .results-container .main-container .card img,
+body .results-container .favorite-container .card img {
   max-width: 100%;
   max-height: 10rem;
   min-height: 10rem;
@@ -162,25 +165,29 @@ body .results-container .main-container .card img {
   cursor: pointer;
 }
 
-body .results-container .main-container .card .title {
+body .results-container .main-container .card .title,
+body .results-container .favorite-container .card .title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   text-align: center;
 }
 
-body .results-container .main-container .card .description {
+body .results-container .main-container .card .description,
+body .results-container .favorite-container .card .description {
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
 
-body .results-container .main-container .card .description .truncate {
+body .results-container .main-container .card .description .truncate,
+body .results-container .favorite-container .card .description .truncate {
   width: 200px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-body .results-container .main-container .card .add-button-container {
+body .results-container .main-container .card .add-button-container,
+body .results-container .favorite-container .card .add-button-container {
   min-height: 2.5rem;
   min-width: 2.5rem;
   border-radius: 50%;
@@ -203,7 +210,8 @@ body .results-container .main-container .card .add-button-container {
   border: none;
 }
 
-body .results-container .main-container .card .add-button-container .add-button {
+body .results-container .main-container .card .add-button-container .add-button,
+body .results-container .favorite-container .card .add-button-container .add-button {
   border: none;
   border-radius: 50%;
   min-height: 2rem;
@@ -211,30 +219,17 @@ body .results-container .main-container .card .add-button-container .add-button 
   cursor: pointer;
 }
 
-body .results-container .main-container .card .add-button-container.added {
+body .results-container .main-container .card .add-button-container.added,
+body .results-container .favorite-container .card .add-button-container.added {
   background-color: green;
 }
 
-body .results-container .main-container .card.active {
+body .results-container .main-container .card.active,
+body .results-container .favorite-container .card.active {
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
-}
-
-body .results-container .favorite-container {
-  display: none;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 1.5rem;
-  width: 100%;
-  height: 100%;
-  background-color: palegreen;
-  margin-top: 4rem;
 }
 
 @media screen and (max-width: 500px) {
