@@ -9,6 +9,7 @@ var favoriteNavigation = document.querySelector('.favorite-navigation');
 var backBtn = document.querySelector('.back-btn');
 var resultsContainer = document.querySelector('.results-container');
 var loader = document.querySelector('.loader');
+var loadMoreBtn = document.querySelector('.load-more-btn');
 
 window.addEventListener('DOMContentLoaded', async() => {
   var apiKey = 'DEMO_KEY';
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', async() => {
 
   function renderCards(cards, parentEl) {
     parentEl.innerHTML = '';
+    var icon = parentEl === mainContainer ? '+' : 'X';
 
     cards.forEach(card => {
       var cardElement = document.createElement('div');
@@ -41,7 +43,7 @@ window.addEventListener('DOMContentLoaded', async() => {
       imageElement.src = card.url;
       descriptionP.innerText = card.explanation;
       addBtnElement.title = 'ADD TO FAVORITES';
-      addBtnElement.innerText = '+';
+      addBtnElement.innerText = icon;
       imageAncherElement.setAttribute('target', '_blank');
       imageAncherElement.href = card.hdurl;
       descriptionElement.title = card.explanation;
@@ -59,7 +61,7 @@ window.addEventListener('DOMContentLoaded', async() => {
       cardElement.appendChild(addBtnContainer);
       parentEl.appendChild(cardElement);
 
-      cardElement.addEventListener('click', (e) => {
+      addBtnElement.addEventListener('click', (e) => {
         var mainCards = JSON.parse(localStorage.getItem('mainCards'));
         var favoriteCards = localStorage.getItem('favoriteCards') !== null ? JSON.parse(localStorage.getItem('favoriteCards')) : [];
         var updatedMainCards;
@@ -70,9 +72,11 @@ window.addEventListener('DOMContentLoaded', async() => {
           if (favoriteCards.some(c => c.copyright === card.copyright)) {
             var newFavorites = favoriteCards.filter(c => c.copyright !== card.copyright);
             localStorage.setItem('favoriteCards', JSON.stringify(newFavorites));   
+
+            renderCards(newFavorites, favoritesContainer);
           }
 
-          var updatedMainCards = mainCards.map(c => {
+          updatedMainCards = mainCards.map(c => {
             if (c.copyright === card.copyright) {
               c.favorite = false;
             }
@@ -83,18 +87,33 @@ window.addEventListener('DOMContentLoaded', async() => {
         else {
           addBtnContainer.classList.add('added');
 
+          // issue
+          // updatedMainCards = mainCards.map(c => {
+          //   if (c.copyright === card.copyright) {
+          //     c.favorite = true;
+          //   }
+  
+          //   return c;
+          // });
+
           if (!favoriteCards.some(c => c.copyright === card.copyright)) {
             favoriteCards.push(card);
             localStorage.setItem('favoriteCards', JSON.stringify(favoriteCards));   
           }
+          else {
+            var newFavorites = favoriteCards.filter(c => c.copyright !== card.copyright);
+            localStorage.setItem('favoriteCards', JSON.stringify(newFavorites));   
 
-          var updatedMainCards = mainCards.map(c => {
-            if (c.copyright === card.copyright) {
-              c.favorite = true;
-            }
-  
-            return c;
-          });
+            // updatedMainCards = mainCards.map(c => {
+            //   if (c.copyright === card.copyright) {
+            //     c.favorite = false;
+            //   }
+    
+            //   return c;
+            // });
+
+            renderCards(newFavorites, favoritesContainer);
+          }
         }
 
         localStorage.setItem('mainCards', JSON.stringify(updatedMainCards));   
@@ -130,13 +149,12 @@ window.addEventListener('DOMContentLoaded', async() => {
     loader.style.display = 'flex';
 
     var response = await fetch(url);
-    var cardsData = await response.json();
+    var cardsData = response.json();
     
-    localStorage.setItem('mainCards', JSON.stringify(cardsData));
-
     cardsData.then(cards => {
       renderCards(cards, mainContainer);
 
+      localStorage.setItem('mainCards', JSON.stringify(cards));
       resultsContainer.style.display = 'flex';
       loader.style.display = 'none';
     });
@@ -158,5 +176,9 @@ window.addEventListener('DOMContentLoaded', async() => {
     favoritesContainer.style.display = 'none';
     mainNavigation.style.display = 'flex';
     favoriteNavigation.style.display = 'none';
+  });
+
+  loadMoreBtn.addEventListener('click', async() => {
+    await getPhotosFromAPI();
   });
 });

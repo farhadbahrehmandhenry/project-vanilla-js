@@ -127,7 +127,7 @@ body .results-container .favorite-container {
 body .results-container .main-container .card,
 body .results-container .favorite-container .card {
   width: 15rem;
-  height: 19rem;
+  min-height: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,14 +168,37 @@ body .results-container .favorite-container .card img {
 body .results-container .main-container .card .title,
 body .results-container .favorite-container .card .title {
   margin-bottom: 0.5rem;
+  min-height: 2.5rem;
   font-size: 1rem;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
 }
 
 body .results-container .main-container .card .description,
 body .results-container .favorite-container .card .description {
   margin-bottom: 0.5rem;
+  min-height: 2rem;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 body .results-container .main-container .card .description .truncate,

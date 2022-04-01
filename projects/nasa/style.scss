@@ -89,7 +89,7 @@ body {
 
       .card {
         width: 15rem;
-        height: 19rem;
+        min-height: 22rem;
         @include flex;
         flex-direction: column;
         align-items: center;
@@ -113,13 +113,20 @@ body {
 
         .title {
           margin-bottom: 0.5rem;
+          min-height: 2.5rem;
           font-size: 1rem;
           text-align: center;
+          @include flex;
+          justify-content: center;
         }
 
         .description {
           margin-bottom: 0.5rem;
+          min-height: 2rem;
           cursor: pointer;
+          @include flex;
+          justify-content: center;
+          width: 100%;
 
           p {
           }
