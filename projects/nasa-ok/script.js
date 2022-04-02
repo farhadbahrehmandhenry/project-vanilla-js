@@ -21,8 +21,9 @@ window.addEventListener('DOMContentLoaded', async() => {
   function renderCards(cards, parentEl) {
     parentEl.innerHTML = '';
     var icon = parentEl === mainContainer ? '+' : 'X';
+    var title = parentEl === mainContainer ? 'ADD TO FAVORITES' : 'REMOVE FROM FAVORITES';
 
-    cards.forEach(card => {
+    cards.forEach((card, index) => {
       var cardElement = document.createElement('div');
       var imageAncherElement = document.createElement('a');
       var imageElement = document.createElement('img');
@@ -37,12 +38,13 @@ window.addEventListener('DOMContentLoaded', async() => {
       descriptionElement.className = 'description';
       addBtnContainer.className = 'add-button-container';
       addBtnElement.className = 'add-button';
+      addBtnElement.setAttribute('data-index', index);
       descriptionP.className = 'truncate';
       imageElement.className = 'image';
       titleElement.innerText = card.title;
       imageElement.src = card.url;
-      descriptionP.innerText = card.explanation;
-      addBtnElement.title = 'ADD TO FAVORITES';
+      descriptionP.innerText = card.explanation.replace(/[\r\n]/gm, '');
+      addBtnElement.title = title;
       addBtnElement.innerText = icon;
       imageAncherElement.setAttribute('target', '_blank');
       imageAncherElement.href = card.hdurl;
@@ -66,53 +68,62 @@ window.addEventListener('DOMContentLoaded', async() => {
         var favoriteCards = localStorage.getItem('favoriteCards') !== null ? JSON.parse(localStorage.getItem('favoriteCards')) : [];
         var updatedMainCards;
 
-        if (addBtnContainer.classList.contains('added')) {
-          addBtnContainer.classList.remove('added');
+        if (addBtnElement.parentElement.classList.contains('added')) {
+          addBtnElement.parentElement.classList.remove('added');
 
-          if (favoriteCards.some(c => c.copyright === card.copyright)) {
-            var newFavorites = favoriteCards.filter(c => c.copyright !== card.copyright);
+          if (favoriteCards.some(c => c.title === card.title)) {
+            var newFavorites = favoriteCards.filter(c => c.title !== card.title);
             localStorage.setItem('favoriteCards', JSON.stringify(newFavorites));   
 
             renderCards(newFavorites, favoritesContainer);
           }
 
           updatedMainCards = mainCards.map(c => {
-            if (c.copyright === card.copyright) {
+            if (c.title === card.title) {
               c.favorite = false;
             }
   
             return c;
           });
+
+          renderCards(updatedMainCards, mainContainer);
         }
         else {
-          addBtnContainer.classList.add('added');
+          addBtnElement.parentElement.classList.add('added');
 
-          // issue
-          // updatedMainCards = mainCards.map(c => {
-          //   if (c.copyright === card.copyright) {
-          //     c.favorite = true;
-          //   }
+          updatedMainCards = mainCards.map(c => {
+            if (c.title === card.title) {
+              c.favorite = true;
+            }
   
-          //   return c;
-          // });
+            return c;
+          });
 
-          if (!favoriteCards.some(c => c.copyright === card.copyright)) {
+          if (!favoriteCards.some(c => c.title === card.title)) {
             favoriteCards.push(card);
             localStorage.setItem('favoriteCards', JSON.stringify(favoriteCards));   
           }
           else {
-            var newFavorites = favoriteCards.filter(c => c.copyright !== card.copyright);
+            var newFavorites = favoriteCards.filter(c => c.title !== card.title);
             localStorage.setItem('favoriteCards', JSON.stringify(newFavorites));   
 
-            // updatedMainCards = mainCards.map(c => {
-            //   if (c.copyright === card.copyright) {
-            //     c.favorite = false;
-            //   }
+            updatedMainCards = mainCards.map((c, index) => {
+              if (c.title === card.title) {
+                c.favorite = false;
+
+                var selecteCards = document.querySelectorAll(`[data-index="${index}"]`);
+
+                console.log(selecteCards)
+                selecteCards.forEach(c => {
+                  c.parentElement.classList.remove('added');
+                })
+              }
     
-            //   return c;
-            // });
+              return c;
+            });
 
             renderCards(newFavorites, favoritesContainer);
+            renderCards(updatedMainCards, mainContainer);
           }
         }
 
