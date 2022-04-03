@@ -37,9 +37,9 @@ var projects = [
   {name: 'Light Dark Mode', link: './projects/light-dark-mode-ok', image: '/image/light-dark.png'},
   {name: 'Rock Paper Scissors', link: './projects/rock-paper-scissors-ok', image: '/image/rock-paper-scissors.png'},
   {name: 'NASA', link: './projects/nasa-ok', image: '/image/nasa.png'},
+  {name: 'KANBAN', link: './projects/kanban-ok', image: '/image/kanban.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
-
 
 window.addEventListener('DOMContentLoaded', () => {
   projects.forEach(project => {

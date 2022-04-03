@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #457b9d;
+  padding-top: 3rem;
+}
+
+body .to-do-container,
+body .in-progress-container,
+body .done-container,
+body .on-hold-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 14rem;
+  height: auto;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+body .to-do-container .title,
+body .in-progress-container .title,
+body .done-container .title,
+body .on-hold-container .title {
+  width: 100%;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: red;
+}
+
+body .to-do-container .to-do-task-container,
+body .to-do-container .in-progress-task-container,
+body .to-do-container .done-task-container,
+body .to-do-container .on-hold-task-container,
+body .in-progress-container .to-do-task-container,
+body .in-progress-container .in-progress-task-container,
+body .in-progress-container .done-task-container,
+body .in-progress-container .on-hold-task-container,
+body .done-container .to-do-task-container,
+body .done-container .in-progress-task-container,
+body .done-container .done-task-container,
+body .done-container .on-hold-task-container,
+body .on-hold-container .to-do-task-container,
+body .on-hold-container .in-progress-task-container,
+body .on-hold-container .done-task-container,
+body .on-hold-container .on-hold-task-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 2rem;
+  height: auto;
+}
+
+body .to-do-container .to-do-task-container .task,
+body .to-do-container .in-progress-task-container .task,
+body .to-do-container .done-task-container .task,
+body .to-do-container .on-hold-task-container .task,
+body .in-progress-container .to-do-task-container .task,
+body .in-progress-container .in-progress-task-container .task,
+body .in-progress-container .done-task-container .task,
+body .in-progress-container .on-hold-task-container .task,
+body .done-container .to-do-task-container .task,
+body .done-container .in-progress-task-container .task,
+body .done-container .done-task-container .task,
+body .done-container .on-hold-task-container .task,
+body .on-hold-container .to-do-task-container .task,
+body .on-hold-container .in-progress-task-container .task,
+body .on-hold-container .done-task-container .task,
+body .on-hold-container .on-hold-task-container .task {
+  height: 2rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 0.25rem;
+  border: none;
+  outline: none;
+  padding-left: 0.5rem;
+  color: black;
+}
+
+body .to-do-container .to-do-task-container .task:not(:focus),
+body .to-do-container .in-progress-task-container .task:not(:focus),
+body .to-do-container .done-task-container .task:not(:focus),
+body .to-do-container .on-hold-task-container .task:not(:focus),
+body .in-progress-container .to-do-task-container .task:not(:focus),
+body .in-progress-container .in-progress-task-container .task:not(:focus),
+body .in-progress-container .done-task-container .task:not(:focus),
+body .in-progress-container .on-hold-task-container .task:not(:focus),
+body .done-container .to-do-task-container .task:not(:focus),
+body .done-container .in-progress-task-container .task:not(:focus),
+body .done-container .done-task-container .task:not(:focus),
+body .done-container .on-hold-task-container .task:not(:focus),
+body .on-hold-container .to-do-task-container .task:not(:focus),
+body .on-hold-container .in-progress-task-container .task:not(:focus),
+body .on-hold-container .done-task-container .task:not(:focus),
+body .on-hold-container .on-hold-task-container .task:not(:focus) {
+  background-color: gray;
+  color: white;
+}
+
+body .to-do-container .add-item,
+body .in-progress-container .add-item,
+body .done-container .add-item,
+body .on-hold-container .add-item {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+body .to-do-container.over,
+body .in-progress-container.over,
+body .done-container.over,
+body .on-hold-container.over {
+  background-color: red;
+}
+
+body .to-do-container .title {
+  background-color: #ca6702;
+}
+
+body .in-progress-container .title {
+  background-color: #94d2bd;
+}
+
+body .done-container .title {
+  background-color: #0a9396;
+}
+
+body .on-hold-container .title {
+  background-color: #bb3e03;
+}
+/*# sourceMappingURL=style.css.map */
