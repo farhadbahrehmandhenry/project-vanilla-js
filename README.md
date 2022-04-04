@@ -74,7 +74,8 @@
 | 37  | [NASA](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/kanban-ok)                                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/kanban-ok/index.html)                   |
 | 38  | [NASA](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/paint-ok)                                        | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/paint-ok/index.html)                    |
 | 39  | [NASA](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/pong-ok)                                         | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/pong-ok/index.html)                     |
-| 40  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
+| 40  | [NASA](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/expanding-pic-ok)                                | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/expanding-pic-ok/index.html)            |
+| 41  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
 
 ## Useful websites
 

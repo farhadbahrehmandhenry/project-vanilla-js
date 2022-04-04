@@ -40,6 +40,7 @@ var projects = [
   {name: 'KANBAN', link: './projects/kanban-ok', image: '/image/kanban.png'},
   {name: 'Paint', link: './projects/paint-ok', image: ''},
   {name: 'Pong', link: './projects/pong-ok', image: ''},
+  {name: 'Expanding Pics', link: './projects/expanding-pic-ok', image: '/image/expand.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
 

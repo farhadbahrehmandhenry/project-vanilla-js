@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+body .one,
+body .two,
+body .three,
+body .four,
+body .five {
+  height: 90%;
+  width: 5rem;
+  margin-right: 0.5rem;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+  -webkit-transition: -webkit-box-flex 0.7s ease;
+  transition: -webkit-box-flex 0.7s ease;
+  transition: flex 0.7s ease;
+  transition: flex 0.7s ease, -webkit-box-flex 0.7s ease, -ms-flex 0.7s ease;
+}
+
+body .one img,
+body .two img,
+body .three img,
+body .four img,
+body .five img {
+  height: 100%;
+  width: 90vw;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+body .one.active,
+body .two.active,
+body .three.active,
+body .four.active,
+body .five.active {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+body .one.active img,
+body .two.active img,
+body .three.active img,
+body .four.active img,
+body .five.active img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
