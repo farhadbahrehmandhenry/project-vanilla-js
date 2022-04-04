@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d3557;
+
+  .container {
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .steps {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+
+      .one,
+      .two,
+      .three,
+      .four {
+        width: 25%;
+        height: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        .step {
+          border: 4px solid #a8dadc;
+          border-radius: 50%;
+          width: 2rem;
+          height: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          outline: none;
+          z-index: 2;
+          position: absolute;
+          background-color: white;
+        }
+
+        .distance-complete,
+        .distance {
+          width: calc(100% - 2rem + 4px);
+          height: 4px;
+          background-color: #a8dadc;
+          outline: none;
+          position: absolute;
+          left: 2rem;
+          z-index: 0;
+        }
+
+        .distance {
+          background-color: #a8dadc;
+        }
+
+        .distance-complete {
+          background-color: #fb8500;
+          width: 0;
+          transition: width 1s ease;
+        }
+      }
+
+      .one {
+        margin-left: 15%;
+
+        .step {
+          border-color: #fb8500;
+        }
+      }
+    }
+
+    .buttons {
+      margin-top: 2rem;
+
+      .prev,
+      .next {
+        width: 6rem;
+        height: 2rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #a8dadc;
+      }
+
+      .prev {
+      }
+
+      .next {
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d3557;
+}
+
+body .container {
+  height: 3rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+body .container .steps .one,
+body .container .steps .two,
+body .container .steps .three,
+body .container .steps .four {
+  width: 25%;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .container .steps .one .step,
+body .container .steps .two .step,
+body .container .steps .three .step,
+body .container .steps .four .step {
+  border: 4px solid #a8dadc;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  z-index: 2;
+  position: absolute;
+  background-color: white;
+}
+
+body .container .steps .one .distance-complete,
+body .container .steps .one .distance,
+body .container .steps .two .distance-complete,
+body .container .steps .two .distance,
+body .container .steps .three .distance-complete,
+body .container .steps .three .distance,
+body .container .steps .four .distance-complete,
+body .container .steps .four .distance {
+  width: calc(100% - 2rem + 4px);
+  height: 4px;
+  background-color: #a8dadc;
+  outline: none;
+  position: absolute;
+  left: 2rem;
+  z-index: 0;
+}
+
+body .container .steps .one .distance,
+body .container .steps .two .distance,
+body .container .steps .three .distance,
+body .container .steps .four .distance {
+  background-color: #a8dadc;
+}
+
+body .container .steps .one .distance-complete,
+body .container .steps .two .distance-complete,
+body .container .steps .three .distance-complete,
+body .container .steps .four .distance-complete {
+  background-color: #fb8500;
+  width: 0;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+body .container .steps .one {
+  margin-left: 15%;
+}
+
+body .container .steps .one .step {
+  border-color: #fb8500;
+}
+
+body .container .buttons {
+  margin-top: 2rem;
+}
+
+body .container .buttons .prev,
+body .container .buttons .next {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #a8dadc;
+}
+/*# sourceMappingURL=style.css.map */
