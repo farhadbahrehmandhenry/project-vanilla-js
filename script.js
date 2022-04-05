@@ -17,7 +17,7 @@ var projects = [
   {name: 'Music Player', link: './projects/music-player-ok', image: '/images/music.png'},
   {name: 'Simple Navbar', link: './projects/navbar-ok', image: '/navbar.png'},
   {name: 'Simple Navbar 2', link: './projects/navbar-2-ok', image: '/image/navbar-2.png'},
-  {name: 'Simple Navbar 3', link: './projects/land-page-ok', image: '/image/land.png'},
+  {name: 'Simple Navbar 3', link: './projects/land-page-ok', image: '/image/land.jpg'},
   {name: 'Parallex Effect', link: './projects/parallex-effect-ok', image: '/images/parallex.png'},
   {name: 'Progress Bar', link: './projects/progress-bar-ok', image: '/progress.png'},
   {name: 'Simple Search Bar', link: './projects/search-bar-ok', image: '/search.png'},
