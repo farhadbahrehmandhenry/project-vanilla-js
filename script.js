@@ -42,8 +42,8 @@ var projects = [
   {name: 'Paint', link: './projects/paint-ok', image: ''},
   {name: 'Pong', link: './projects/pong-ok', image: ''},
   {name: 'Expanding Pics', link: './projects/expanding-pic-ok', image: '/image/expand.png'},
-  {name: 'Steps', link: './projects/steps-ok', image: '/image/steps.png'},
   {name: 'Blurry Loading', link: './projects/blurry-ok', image: '/image/blurry.jpg'},
+  {name: 'Steps', link: './projects/steps-ok', image: '/image/steps.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
 
