@@ -78,7 +78,8 @@
 | 41  | [Expanding pics](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/expanding-pic-ok)                      | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/expanding-pic-ok/index.html)            |
 | 42  | [Steps](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/steps-ok)                                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/steps-ok/index.html)                    |
 | 43  | [Blurry Loading](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/blurry-ok)                             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/blurry-ok/index.html)                   |
-| 44  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
+| 44  | [Blurry Loading](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/scroll-animation-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/scroll-animation-ok/index.html)         |
+| 45  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
 
 ## Useful websites
 
