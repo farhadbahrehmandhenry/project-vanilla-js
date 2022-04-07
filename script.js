@@ -45,6 +45,7 @@ var projects = [
   {name: 'Blurry Loading', link: './projects/blurry-ok', image: '/image/blurry.jpg'},
   {name: 'Steps', link: './projects/steps-ok', image: '/image/steps.png'},
   {name: 'Scroll Animation', link: './projects/scroll-animation-ok', image: '/image/scroll-animation.png'},
+  {name: 'Split Landing', link: './projects/split-ok', image: '/image/split.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
 
