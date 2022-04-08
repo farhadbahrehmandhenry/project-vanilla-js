@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #023e8a;
+}
+
+body form {
+  width: 50vmin;
+  height: 80vmin;
+  background-color: #457b9d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+body form .email-label,
+body form .password-label {
+  width: 100%;
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body form .email-label span,
+body form .password-label span {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+body form .email-label span.active,
+body form .password-label span.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body form .email-label span:nth-child(1) {
+  -webkit-transition: -webkit-transform 0.3s 0.2s ease;
+  transition: -webkit-transform 0.3s 0.2s ease;
+  transition: transform 0.3s 0.2s ease;
+  transition: transform 0.3s 0.2s ease, -webkit-transform 0.3s 0.2s ease;
+}
+
+body form .email-label span:nth-child(2) {
+  -webkit-transition: -webkit-transform 0.3s 0.3s ease;
+  transition: -webkit-transform 0.3s 0.3s ease;
+  transition: transform 0.3s 0.3s ease;
+  transition: transform 0.3s 0.3s ease, -webkit-transform 0.3s 0.3s ease;
+}
+
+body form .email-label span:nth-child(3) {
+  -webkit-transition: -webkit-transform 0.3s 0.4s ease;
+  transition: -webkit-transform 0.3s 0.4s ease;
+  transition: transform 0.3s 0.4s ease;
+  transition: transform 0.3s 0.4s ease, -webkit-transform 0.3s 0.4s ease;
+}
+
+body form .email-label span:nth-child(4) {
+  -webkit-transition: -webkit-transform 0.3s 0.5s ease;
+  transition: -webkit-transform 0.3s 0.5s ease;
+  transition: transform 0.3s 0.5s ease;
+  transition: transform 0.3s 0.5s ease, -webkit-transform 0.3s 0.5s ease;
+}
+
+body form .email-label span:nth-child(5) {
+  -webkit-transition: -webkit-transform 0.3s 0.6s ease;
+  transition: -webkit-transform 0.3s 0.6s ease;
+  transition: transform 0.3s 0.6s ease;
+  transition: transform 0.3s 0.6s ease, -webkit-transform 0.3s 0.6s ease;
+}
+
+body form .password-label span:nth-child(1) {
+  -webkit-transition: -webkit-transform 0.3s 0.2s ease;
+  transition: -webkit-transform 0.3s 0.2s ease;
+  transition: transform 0.3s 0.2s ease;
+  transition: transform 0.3s 0.2s ease, -webkit-transform 0.3s 0.2s ease;
+}
+
+body form .password-label span:nth-child(2) {
+  -webkit-transition: -webkit-transform 0.3s 0.3s ease;
+  transition: -webkit-transform 0.3s 0.3s ease;
+  transition: transform 0.3s 0.3s ease;
+  transition: transform 0.3s 0.3s ease, -webkit-transform 0.3s 0.3s ease;
+}
+
+body form .password-label span:nth-child(3) {
+  -webkit-transition: -webkit-transform 0.3s 0.4s ease;
+  transition: -webkit-transform 0.3s 0.4s ease;
+  transition: transform 0.3s 0.4s ease;
+  transition: transform 0.3s 0.4s ease, -webkit-transform 0.3s 0.4s ease;
+}
+
+body form .password-label span:nth-child(4) {
+  -webkit-transition: -webkit-transform 0.3s 0.5s ease;
+  transition: -webkit-transform 0.3s 0.5s ease;
+  transition: transform 0.3s 0.5s ease;
+  transition: transform 0.3s 0.5s ease, -webkit-transform 0.3s 0.5s ease;
+}
+
+body form .password-label span:nth-child(5) {
+  -webkit-transition: -webkit-transform 0.3s 0.6s ease;
+  transition: -webkit-transform 0.3s 0.6s ease;
+  transition: transform 0.3s 0.6s ease;
+  transition: transform 0.3s 0.6s ease, -webkit-transform 0.3s 0.6s ease;
+}
+
+body form .password-label span:nth-child(6) {
+  -webkit-transition: -webkit-transform 0.3s 0.7s ease;
+  transition: -webkit-transform 0.3s 0.7s ease;
+  transition: transform 0.3s 0.7s ease;
+  transition: transform 0.3s 0.7s ease, -webkit-transform 0.3s 0.7s ease;
+}
+
+body form .password-label span:nth-child(7) {
+  -webkit-transition: -webkit-transform 0.3s 0.8s ease;
+  transition: -webkit-transform 0.3s 0.8s ease;
+  transition: transform 0.3s 0.8s ease;
+  transition: transform 0.3s 0.8s ease, -webkit-transform 0.3s 0.8s ease;
+}
+
+body form .password-label span:nth-child(8) {
+  -webkit-transition: -webkit-transform 0.3s 0.9s ease;
+  transition: -webkit-transform 0.3s 0.9s ease;
+  transition: transform 0.3s 0.9s ease;
+  transition: transform 0.3s 0.9s ease, -webkit-transform 0.3s 0.9s ease;
+}
+
+body form .email,
+body form .password,
+body form .login-btn {
+  width: 100%;
+  height: 2rem;
+  padding-left: 0.5rem;
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+
+body form .email,
+body form .password {
+  border-bottom: 1px solid #023047;
+  background-color: #457b9d;
+  background: transparent;
+}
+
+body form .login-btn {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  background-color: #023047;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+body form h5 {
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+body form .register {
+  color: whitesmoke;
+  opacity: 0.7;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

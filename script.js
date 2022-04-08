@@ -7,6 +7,7 @@ var projects = [
   {name: 'Flash Cards', link: './projects/flash-card-ok', image: '/flash.png'},
   {name: 'Flip Card', link: './projects/flip-card-ok', image: '/flip.png'},
   {name: 'Form', link: './projects/form-ok', image: '/form.png'},
+  {name: 'Form 2', link: './projects/form-2-ok', image: '/image/formTwo.png'},
   {name: 'Full Page Scroll', link: './projects/full-page-scroll-effect-ok', image: '/full-page-scroll.png'},
   {name: 'Hangman', link: './projects/hangman-ok', image: '/hangman.png'},
   {name: 'Infinite Scroll', link: './projects/infinite-scrolling-ok', image: '/infinite-scroll.png'},
