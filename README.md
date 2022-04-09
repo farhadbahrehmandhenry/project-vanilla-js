@@ -79,9 +79,10 @@
 | 42  | [Expanding pics](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/expanding-pic-ok)                      | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/expanding-pic-ok/index.html)            |
 | 43  | [Steps](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/steps-ok)                                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/steps-ok/index.html)                    |
 | 44  | [Blurry Loading](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/blurry-ok)                             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/blurry-ok/index.html)                   |
-| 45  | [Blurry Loading](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/scroll-animation-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/scroll-animation-ok/index.html)         |
-| 46  | [Blurry Loading](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/split-ok)                              | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/split-ok/index.html)                    |
-| 47  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
+| 45  | [Scroll Animation](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/scroll-animation-ok)                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/scroll-animation-ok/index.html)         |
+| 46  | [Split Landing Page](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/split-ok)                          | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/split-ok/index.html)                    |
+| 47  | [FAQ](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/faq-ok)                                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/faq-ok/index.html)                      |
+| 48  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
 
 ## Useful websites
 
@@ -117,10 +118,12 @@
 | API                 | https://react.rocks/tag/CRUD                                                     |
 | API                 | https://lyrics.ovh/                                                              |
 | API                 | https://api.nasa.gov/                                                            |
+| API                 | https://icanhazdadjoke.com/api                                                   |
 | DOM-Element         | https://www.javascripttutorial.net/javascript-dom/javascript-width-height/       |
 | Photo               | https://unsplash.com/                                                            |
 | Design              | https://github.com/bradtraversy/design-resources-for-developers                  |
 | JS                  | https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts |
+| Key Code            | https://keycode.info/                                                            |
 | Git learning        | https://learngitbranching.js.org/                                                |
 
 ## articles =>
