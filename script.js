@@ -48,6 +48,7 @@ var projects = [
   {name: 'Scroll Animation', link: './projects/scroll-animation-ok', image: '/image/scroll-animation.png'},
   {name: 'Split Landing', link: './projects/split-ok', image: '/image/split.png'},
   {name: 'FAQ', link: './projects/faq-ok', image: '/image/faq.png'},
+  {name: 'Random Picker', link: './projects/random-picker-ok', image: '/random-picker.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
 

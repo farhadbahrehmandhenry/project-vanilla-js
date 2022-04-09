@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #caf0f8;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  textarea {
+    width: 70vmin;
+    min-height: 5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+
+  .options {
+    width: 70vmin;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .option {
+      background-color: #0077b6;
+      color: white;
+      width: fit-content;
+      padding: 0.5rem;
+      padding-top: 0.3rem;
+      border-radius: 25px;
+      margin-top: 0.2rem;
+      margin-right: 0.2rem;
+    }
+
+    .option.highlight {
+      background-color: #6a040f;
+    }
+  }
+}
