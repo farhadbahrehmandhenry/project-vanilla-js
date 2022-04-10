@@ -83,8 +83,9 @@
 | 46  | [Split Landing Page](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/split-ok)                          | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/split-ok/index.html)                    |
 | 47  | [FAQ](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/faq-ok)                                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/faq-ok/index.html)                      |
 | 48  | [Random Picker](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/random-picker-ok)                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/random-picker-ok/index.html)            |
-| 44  | [Animated Navigation](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/animated-navigation-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/animated-navigation-ok/index.html)      |
-| 50  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
+| 49  | [Animated Navigation](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/animated-navigation-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/animated-navigation-ok/index.html)      |
+| 50  | [Drink Water](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/water-ok)                                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/water-ok/index.html)                    |
+| 51  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
 
 ## Useful websites
 

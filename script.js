@@ -50,6 +50,7 @@ var projects = [
   {name: 'FAQ', link: './projects/faq-ok', image: '/image/faq.png'},
   {name: 'Random Picker', link: './projects/random-picker-ok', image: '/random-picker.png'},
   {name: 'Animated Navigation', link: './projects/animated-navigation-ok', image: '/animated-nav.png'},
+  {name: 'Drink Water', link: './projects/water-ok', image: '/water.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
 
