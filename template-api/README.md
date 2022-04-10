@@ -1,0 +1,5 @@
+- copy the folder
+- npm install
+- update env file
+- after finishing the project run `nom run build`
+- replace `script.js` with `bundle.js` in index.html file

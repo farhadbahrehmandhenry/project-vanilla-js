@@ -2,7 +2,7 @@ var imageContainer = document.querySelector('.image-container');
 var loader = document.querySelector('.loader');
 
 var imageCount = 30;
-var apiKey = 'aJxAMhnsvA4dAe5EsdeN5Ol6OrlX25fyZYO4jzrEYoA'
+var apiKey = process.env.UNSPLASH_API_KEY;
 var apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${imageCount}`;
 var photos = [];
 var loadCount = 0;
