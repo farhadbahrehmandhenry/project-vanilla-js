@@ -7,7 +7,7 @@ var rate = document.querySelector('.rate');
 
 var calculate = async (el) => {
   var currency = el === 'from' ? fromCurrency.value : toCurrency.value;
-  var url = `https://v6.exchangerate-api.com/v6/81fe4de51f0a0aa71279abfa/latest/${currency}`;
+  var url = `https://v6.exchangerate-api.com/v6/${process.env.EXCHANGE_API_KEY}/latest/${currency}`;
   var data = await fetch(url);
   var parsedData = await data.json();
   var currencies = parsedData.conversion_rates;

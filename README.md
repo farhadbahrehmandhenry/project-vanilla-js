@@ -122,6 +122,7 @@
 | API                 | https://lyrics.ovh/                                                              |
 | API                 | https://api.nasa.gov/                                                            |
 | API                 | https://icanhazdadjoke.com/api                                                   |
+| API                 | https://www.themoviedb.org/?language=en-US                                       |
 | DOM-Element         | https://www.javascripttutorial.net/javascript-dom/javascript-width-height/       |
 | Photo               | https://unsplash.com/                                                            |
 | Design              | https://github.com/bradtraversy/design-resources-for-developers                  |
