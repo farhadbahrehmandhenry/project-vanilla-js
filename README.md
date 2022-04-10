@@ -127,6 +127,7 @@
 | Photo               | https://unsplash.com/                                                            |
 | Design              | https://github.com/bradtraversy/design-resources-for-developers                  |
 | JS                  | https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts |
+| webpack             | https://www.youtube.com/watch?v=GU-2T7k9NfI                                      |
 | Key Code            | https://keycode.info/                                                            |
 | Git learning        | https://learngitbranching.js.org/                                                |
 
