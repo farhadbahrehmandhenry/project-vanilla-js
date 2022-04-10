@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #457b9d;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    background-color: #1d3557;
+    height: 3rem;
+    color: white;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: width 1s ease;
+      width: 19rem;
+
+      li {
+        list-style: none;
+        margin-right: 1rem;
+        cursor: pointer;
+        width: 6rem;
+        transition: opacity 0.5s ease, width 0.5s ease;
+
+        &:nth-child(1) {
+          transition: opacity 0.3s 0.7s ease, width 0.3s 0.7s ease;
+        }
+
+        &:nth-child(2) {
+          transition: opacity 0.3s 0.5s ease, width 0.3s 0.5s ease;
+        }
+
+        &:nth-child(3) {
+          transition: opacity 0.3s 0.3s ease, width 0.3s 0.3s ease;
+        }
+
+        &:nth-child(4) {
+          transition: opacity 0.3s 0.1s ease, width 0.3s 0.1s ease;
+        }
+      }
+    }
+
+    .items.hide {
+      transition: width 2s ease;
+      width: 0;
+    }
+
+    .toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1;
+      height: 2rem;
+
+      .one,
+      .two {
+        width: 1.5rem;
+        background-color: white;
+        height: 2px;
+        transition: all 1s linear;
+      }
+
+      .one {
+        transform: rotate(45deg) translateY(1px) translateX(1px);
+        // animation: rotateOne 1s infinite;
+      }
+
+      .two {
+        transform: rotate(-45deg) translateY(-0.5px);
+        // animation: rotateTwo 1s infinite;
+      }
+    }
+
+    .toggle.close {
+      .one {
+        margin-bottom: 2px;
+        transform: rotate(0);
+        // animation: rotateOne 1s infinite;
+      }
+
+      .two {
+        transform: rotate(0);
+        // animation: rotateTwo 1s infinite;
+      }
+    }
+  }
+}
+
+@keyframes rotateOne {
+  0% {
+    transform: rotate(45deg) translateY(1px) translateX(1px);
+  }
+  50% {
+    transform: rotate(0) translateY(-0.5px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(1px) translateX(1px);
+  }
+}
+
+@keyframes rotateTwo {
+  0% {
+    transform: rotate(-45deg) translateY(-0.5px);
+  }
+  50% {
+    transform: rotate(0) translateY(-0.5px);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(-0.5px);
+  }
+}
