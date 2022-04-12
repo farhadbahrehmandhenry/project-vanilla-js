@@ -86,6 +86,7 @@
 | 49  | [Animated Navigation](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/animated-navigation-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/animated-navigation-ok/index.html)      |
 | 50  | [Drink Water](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/water-ok)                                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/water-ok/index.html)                    |
 | 51  | [Movie DB](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/movie-db-ok)                                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/movie-db-ok/index.html)                 |
+| 51  | [Background Slider](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/background-slider-ok)               | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/background-slider-ok/index.html)        |
 | 52  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
 
 ## Useful websites

@@ -52,6 +52,7 @@ var projects = [
   {name: 'Animated Navigation', link: './projects/animated-navigation-ok', image: '/animated-nav.png'},
   {name: 'Drink Water', link: './projects/water-ok', image: '/water.png'},
   {name: 'Movie DB', link: './projects/movie-db-ok', image: '/image/movie-db.png'},
+  {name: 'Background Slider', link: './projects/background-slider-ok', image: '/image/background-slider.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
 ];
 
