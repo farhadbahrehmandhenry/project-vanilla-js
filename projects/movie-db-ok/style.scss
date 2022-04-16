@@ -53,9 +53,7 @@ body {
 
     .movie {
       background-color: #1a1a1a;
-      width: calc(100vmax / 5);
-      max-width: calc(100vmax / 5);
-      min-width: 10rem;
+      flex-grow: 1;
       height: 70vmin;
       min-height: 25rem;
       display: flex;

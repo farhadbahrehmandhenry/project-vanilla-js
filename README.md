@@ -88,6 +88,7 @@
 | 51  | [Movie DB](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/movie-db-ok)                                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/movie-db-ok/index.html)                 |
 | 51  | [Background Slider](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/background-slider-ok)               | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/background-slider-ok/index.html)        |
 | 52  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
+| 53  | [Table](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/table-ok)                                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/table-ok/index.html)                    |
 
 ## Useful websites
 
@@ -134,6 +135,9 @@
 | Key Code            | https://keycode.info/                                                            |
 | Git learning        | https://learngitbranching.js.org/                                                |
 | MDN                 | https://developer.mozilla.org/en-US/                                             |
+| entity codes        | https://dev.w3.org/html5/html-author/charref                                     |
+| generator           | https://html-css-js.com/                                                         |
+| css transition      | https://easings.net/                                                             |
 
 ## articles =>
 

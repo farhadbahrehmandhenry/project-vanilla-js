@@ -83,9 +83,9 @@ body .movies {
 
 body .movies .movie {
   background-color: #1a1a1a;
-  width: calc(100vmax / 5);
-  max-width: calc(100vmax / 5);
-  min-width: 10rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 70vmin;
   min-height: 25rem;
   display: -webkit-box;

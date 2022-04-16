@@ -133,7 +133,9 @@ body .results-container .favorite-container {
 
 body .results-container .main-container .card,
 body .results-container .favorite-container .card {
-  width: 15rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   min-height: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -164,9 +164,9 @@ body .container .meal-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   padding: 1rem;
   overflow: scroll;
@@ -174,18 +174,27 @@ body .container .meal-container {
 
 body .container .meal-container .meal-item {
   cursor: pointer;
-  width: 10rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 10rem;
-  margin: 1rem;
+  margin: 0.5rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0077b6;
 }
 
 body .container .meal-container .meal-item img {
-  width: 100%;
-  height: 100%;
+  width: 10rem;
+  height: 9rem;
 }
 
 body .container .meal-container .meal-item .meal-title {

@@ -13,6 +13,60 @@
 <body>
   <div class="container">
     <!-- we don't need action because we are not submitting the form to the file -->
+    <!-- action="" => where do you want to submit the form data
+    when a form submitsm an http request will be sent to where action in specified 
+    as long as a form has a button, pressing that button on Enter will submit that form 
+    there are different type of buttons, "button", "submit"
+    <button type="submit"></button>
+    <button type="button"></button>
+    <input type="submit" value="whatever"></input>
+    -->
+    <!-- name="username" => this is the parameter that appears in the url  -->
+    <!-- hijacking youtube search => 
+    <form action="https://www.youtube.com/results">
+      <input name="search_query">
+      <button>Search</button>
+    </form> -->
+    <!-- checkbox
+    <input type="checkbox" name="chechbix" id="one" checked>
+    <label for="one"></label> -->
+
+    <!-- radio button - 
+    name should be the same in a group of radios
+    value should be added so after submit we have the correct value 
+    <input type="radio" name="radio" id="one" value="one">
+    <input type="radio" name="radio" id="two" value="two">
+    <input type="radio" name="radio" id="three"value="three"> -->
+
+    <!-- select
+    <select name="select" id="select">
+      <option value="">Select an option</option>
+      <option value="one" selected>ONE</option>
+      <option value="two">TWO</option>
+      <option value="three">THREE</option>
+    </select> -->
+
+    <!-- range
+    <input type="range" min="0" max="100" name="range" step="10" value="30"> -->
+
+    <!-- number
+    <input type="number" min="1" max="10" step="1"> -->
+
+    <!-- textarea
+    <textarea name="" id="" cols="30" rows="10"></textarea> -->
+
+    <!-- validation
+    required
+    minlength
+    maxlength
+    min
+    max
+    email
+    url
+    tel
+    pattern => works like regex
+    using regex -->
+
     <form class="form" id="form">
       <h1>Register</h1>
       <div class="form-control">
@@ -35,7 +89,7 @@
         <input type="password" id="password2" placeholder="Enter Password again">
         <small>Error message</small>
       </div>
-      <button type="submit">SUBMIT</button>
+      <button type="button">SUBMIT</button>
     </form> 
   </div>
   <script src="script.js"></script>

@@ -54,6 +54,7 @@ var projects = [
   {name: 'Movie DB', link: './projects/movie-db-ok', image: '/image/movie-db.png'},
   {name: 'Background Slider', link: './projects/background-slider-ok', image: '/image/background-slider.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
+  {name: 'Tables', link: './projects/table-ok', image: ''},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {

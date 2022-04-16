@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Tables</title>
+</head>
+<body>
+  <h3>table one</h3>
+  <table>
+    <!-- <td></td>  one table cell -->
+    <!-- <tr></tr> one table row -->
+    <!-- <th></th> table header -->
+    <tr>
+      <th>number1</th>
+      <th>number2</th>
+    </tr>
+    <tr>
+      <td>one</td>
+      <td>two</td>
+    </tr>
+    <tr>
+      <td>three</td>
+      <td>four</td>
+    </tr>
+  </table>
+
+  <table>
+    <!-- <thead></thead>  table head -->
+    <!-- <tbody></tbody> table body -->
+    <!-- <tfoot></tfoot> table foot -->
+    <thead>
+      <tr>
+        <th>number1</th>
+        <th>number2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+      </tr>
+      <tr>
+        <td>three</td>
+        <td>four</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>sum</td>
+        <td>sum2</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table>
+    <!-- rowspan  takes up in row -->
+    <!-- colspan takes up in columns -->
+    <thead>
+      <tr>
+        <th rowspan="2">number1</th>
+        <th colspan="2">number2s</th>
+        <th rowspan="2">number2</th>
+      </tr>
+      <tr>
+        <th>number1</th>
+        <th>number2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>two</td>
+        <th>number2</th>
+      </tr>
+      <tr>
+        <td>three</td>
+        <td>four</td>
+        <td>four</td>
+        <th>number2</th>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>sum</td>
+        <td>sum2</td>
+        <td>sum2</td>
+        <td>sum2</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script src="./script.js"></script>
+</body>
+</html>
