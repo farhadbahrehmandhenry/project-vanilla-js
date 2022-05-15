@@ -1,0 +1,124 @@
+*:root {
+  --light-background-color: white;
+  --light-color: black;
+  --light-hand-color: black;
+  --dark-background-color: black;
+  --dark-color: white;
+  --dark-hand-color: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-background-color);
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 5rem;
+      position: fixed;
+      top: 0;
+  
+      .mode-toggle-button {
+        width: 5rem;
+        height: 2rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        color: var(--light-color);
+      }
+    }
+  
+    .analog-clock {
+      height: 10rem;
+      width: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+  
+      .hour-hand, .minute-hand, .second-hand, .center {
+        position: absolute;
+      }
+  
+      .hour-hand {
+        width: 30%;
+        height: 3px;
+        background-color: var(--light-hand-color);
+      }
+  
+      .minute-hand {
+        width: 35%;
+        height: 2px;
+        background-color: var(--light-hand-color);
+      }
+  
+      .second-hand {
+        width: 40%;
+        height: 1px;
+        background-color: red;
+      }
+  
+      .center {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: 1px solid red;
+        z-index: 1;
+        background-color: black;
+      }
+    }
+    .digital-clock-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10rem;
+      color: var(--light-color);
+  
+      .digital-clock {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      .date {
+  
+      }
+    }
+  }
+
+  .container.dark {
+    background-color: var(--dark-background-color);
+
+    .hour-hand {
+      width: 30%;
+      height: 3px;
+      background-color: var(--dark-hand-color);
+    }
+
+    .minute-hand {
+      width: 35%;
+      height: 2px;
+      background-color: var(--dark-hand-color);
+    }
+
+    .digital-clock-container {
+      color: var(--dark-color);
+    }
+  }
+}

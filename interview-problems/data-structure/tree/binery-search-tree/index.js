@@ -25,7 +25,7 @@ class BinerySearchTree {
         if (value > currentNode.value) {
           if (!currentNode.right) {
             currentNode.right = newNode;
-            return;
+            return this;
           }
           else {
             currentNode = currentNode.right;
@@ -33,7 +33,7 @@ class BinerySearchTree {
         } else {
           if (!currentNode.left) {
             currentNode.left = newNode;
-            return;
+            return this;
           }
           else {
             currentNode = currentNode.left;
@@ -44,6 +44,8 @@ class BinerySearchTree {
   }
 }
 
+module.exports = BinerySearchTree;
+
 var bst = new BinerySearchTree();
 bst.insert(10)
 bst.insert(5)
@@ -52,5 +54,3 @@ bst.insert(7)
 bst.insert(13)
 bst.insert(11)
 bst.insert(16)
-
-console.log(bst)

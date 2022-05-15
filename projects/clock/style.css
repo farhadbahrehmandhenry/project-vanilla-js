@@ -1,0 +1,158 @@
+*:root {
+  --light-background-color: white;
+  --light-color: black;
+  --light-hand-color: black;
+  --dark-background-color: black;
+  --dark-color: white;
+  --dark-hand-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-background-color);
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+}
+
+body .container .header .mode-toggle-button {
+  width: 5rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: var(--light-color);
+}
+
+body .container .analog-clock {
+  height: 10rem;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body .container .analog-clock .hour-hand, body .container .analog-clock .minute-hand, body .container .analog-clock .second-hand, body .container .analog-clock .center {
+  position: absolute;
+}
+
+body .container .analog-clock .hour-hand {
+  width: 30%;
+  height: 3px;
+  background-color: var(--light-hand-color);
+}
+
+body .container .analog-clock .minute-hand {
+  width: 35%;
+  height: 2px;
+  background-color: var(--light-hand-color);
+}
+
+body .container .analog-clock .second-hand {
+  width: 40%;
+  height: 1px;
+  background-color: red;
+}
+
+body .container .analog-clock .center {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid red;
+  z-index: 1;
+  background-color: black;
+}
+
+body .container .digital-clock-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10rem;
+  color: var(--light-color);
+}
+
+body .container .digital-clock-container .digital-clock {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+body .container.dark {
+  background-color: var(--dark-background-color);
+}
+
+body .container.dark .hour-hand {
+  width: 30%;
+  height: 3px;
+  background-color: var(--dark-hand-color);
+}
+
+body .container.dark .minute-hand {
+  width: 35%;
+  height: 2px;
+  background-color: var(--dark-hand-color);
+}
+
+body .container.dark .digital-clock-container {
+  color: var(--dark-color);
+}
+/*# sourceMappingURL=style.css.map */

@@ -70,7 +70,7 @@ var inorderTraverse = (root) => {
 var preOrderTraverse = (root) => {
   if (!root) return;
 
-  console.log(root.data);s
+  console.log(root.data);
   preOrderTraverse(root.left);
   preOrderTraverse(root.right);
 }
