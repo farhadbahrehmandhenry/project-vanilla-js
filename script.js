@@ -55,6 +55,7 @@ var projects = [
   {name: 'Background Slider', link: './projects/background-slider-ok', image: '/image/background-slider.png'},
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
   {name: 'Tables', link: './projects/table-ok', image: ''},
+  {name: 'Clock', link: './projects/clock-ok', image: '/clock.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
