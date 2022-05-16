@@ -56,6 +56,7 @@ var projects = [
   {name: 'Class Object Tutorial', link: './configs/class-ok', image: '/class.png'},
   {name: 'Tables', link: './projects/table-ok', image: ''},
   {name: 'Clock', link: './projects/clock-ok', image: '/clock.png'},
+  {name: 'Click Effect', link: './projects/click-effect-ok', image: '/click-effect.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {

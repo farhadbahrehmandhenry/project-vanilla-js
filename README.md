@@ -90,6 +90,7 @@
 | 52  | [Rock Paper Scissors](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/rock-paper-scissors-ok)           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/rock-paper-scissors-ok/index.html)      |
 | 53  | [Clock](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/clock-ok)                                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/clock-ok/index.html)                    |
 | 54  | [Table](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/table-ok)                                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/table-ok/index.html)                    |
+| 55  | [Click Effect](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/click-effect-ok)                         | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/click-effect-ok/index.html)             |
 
 ## Useful websites
 
