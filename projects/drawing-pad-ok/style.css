@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body canvas {
+  border: 2px solid black;
+}
+
+body .toolbox {
+  background-color: steelblue;
+  border: 2px solid slateblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 404px;
+  padding: 1rem;
+}
+
+body .toolbox * {
+  background-color: white;
+  border: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  height: 30px;
+  width: 30px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+body .toolbox *:last-child {
+  margin-left: auto;
+}
+/*# sourceMappingURL=style.css.map */

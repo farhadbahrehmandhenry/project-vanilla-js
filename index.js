@@ -12,3 +12,7 @@
 // How would you approach creating a Chess game?
 // What is the difference between a thread and process?
 // What is a MVC design pattern ?
+var x = [7, 9, 2, 0, 1, 8]
+// console.log(trap([4,2,0,3,2,5]));
+var c = x.sort((a, b)=>a-b)
+console.log(c);

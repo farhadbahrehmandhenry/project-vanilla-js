@@ -57,6 +57,7 @@ var projects = [
   {name: 'Tables', link: './projects/table-ok', image: ''},
   {name: 'Clock', link: './projects/clock-ok', image: '/clock.png'},
   {name: 'Click Effect', link: './projects/click-effect-ok', image: '/click-effect.png'},
+  {name: 'Drawing Pad', link: './projects/drawing-pad-ok', image: '/drawing-pad.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
