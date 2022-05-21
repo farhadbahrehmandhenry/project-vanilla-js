@@ -92,7 +92,8 @@
 | 54  | [Table](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/table-ok)                                       | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/table-ok/index.html)                    |
 | 55  | [Click Effect](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/click-effect-ok)                         | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/click-effect-ok/index.html)             |
 | 56  | [Drawing Pad](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/drawing-pad-ok)                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/drawing-pad-ok/index.html)              |
-| 57  | [Drawing Pad](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/loading-ok)                               | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/loading-ok/index.html)                  |
+| 57  | [Loading Icon](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/loading-ok)                              | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/loading-ok/index.html)                  |
+| 58  | [Graidiant Effect](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/gradiant-effect-ok)                  | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/gradiant-effect-ok/index.html)          |
 
 ## Useful websites
 

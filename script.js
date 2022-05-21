@@ -59,6 +59,7 @@ var projects = [
   {name: 'Click Effect', link: './projects/click-effect-ok', image: '/click-effect.png'},
   {name: 'Drawing Pad', link: './projects/drawing-pad-ok', image: '/drawing-pad.png'},
   {name: 'Loading', link: './projects/loading-ok', image: '/loading.png'},
+  {name: 'Gradiant Effect', link: './projects/gradiant-effect-ok', image: '/graidiant-effect.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
