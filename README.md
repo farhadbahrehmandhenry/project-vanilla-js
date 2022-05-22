@@ -95,6 +95,7 @@
 | 57  | [Loading Icon](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/loading-ok)                              | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/loading-ok/index.html)                  |
 | 58  | [Graidiant Effect](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/gradiant-effect-ok)                  | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/gradiant-effect-ok/index.html)          |
 | 59  | [Sticky Nav](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/sticky-nav-ok)                             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/sticky-nav-ok/index.html)               |
+| 60  | [Vertical Slider](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/vertical-slider-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/vertical-slider-ok/index.html)          |
 
 ## Useful websites
 
