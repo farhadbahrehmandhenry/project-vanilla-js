@@ -60,6 +60,7 @@ var projects = [
   {name: 'Drawing Pad', link: './projects/drawing-pad-ok', image: '/drawing-pad.png'},
   {name: 'Loading', link: './projects/loading-ok', image: '/loading.png'},
   {name: 'Gradiant Effect', link: './projects/gradiant-effect-ok', image: '/graidiant-effect.png'},
+  {name: 'Sticky Nav', link: './projects/sticky-nav-ok', image: '/sticky-nav.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {

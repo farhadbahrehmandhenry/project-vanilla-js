@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: height 1s ease;
+
+    h3 {
+      margin-left: 1rem;
+      color: white;
+      opacity: 0.8;
+    }
+
+    .nav-items {
+      justify-self: flex-end;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: auto;
+      margin-right: 1rem;
+
+
+      .item {
+        list-style: none;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        color: white;
+        opacity: 0.8;
+
+        a {
+          text-decoration: none;
+          color: white;
+          transition: color 0.5s ease;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .nav.change {
+    background-color: #0077b6;
+    color: black;
+    height: 2rem;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  #home {
+    background: url(./office.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100%;
+  }
+}
