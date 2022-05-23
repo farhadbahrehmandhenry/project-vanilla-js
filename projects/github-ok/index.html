@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Github API</title>
+</head>
+<body>
+  <input type="search" placeholder="Github login username...">
+  <div class="no-result"></div>
+  <div id="card">
+    <img class="avatar" src="" alt="">
+    <div class="info">
+      <h3 class="username"></h3>
+      <p class="bio"></p>
+      <div class="social-info">
+        <h2 class="followers">Follwers: </h2>
+        <h2 class="following">Follwings: </h2>
+        <h2 class="repos-count">Repos: </h2>
+      </div>
+      <div class="repos"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

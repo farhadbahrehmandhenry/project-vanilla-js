@@ -61,7 +61,8 @@ var projects = [
   {name: 'Loading', link: './projects/loading-ok', image: '/loading.png'},
   {name: 'Gradiant Effect', link: './projects/gradiant-effect-ok', image: '/graidiant-effect.png'},
   {name: 'Sticky Nav', link: './projects/sticky-nav-ok', image: '/sticky-nav.png'},
-  {name: 'Vertical Slider', link: './projects/vertical-slider-ok', image: '/vertical-slider.png'},
+  {name: 'Vertical Slider', link: './projects/vertical-slider-ok', image: '/image/vertical-slider.png'},
+  {name: 'Github API', link: './projects/github-ok', image: '/github.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
