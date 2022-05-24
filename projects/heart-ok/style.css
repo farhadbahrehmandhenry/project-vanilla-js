@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .like {
+  width: 60vmin;
+  height: auto;
+}
+
+body .like h3, body .like h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .like h3 .heart, body .like h4 .heart {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("./image/heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  text-align: center;
+}
+
+body .card {
+  width: 60vmin;
+  height: 80vmin;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+body .card .heart-img {
+  z-index: 100;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  background-image: url("./image/heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: scale 0.8s ease;
+          animation: scale 0.8s ease;
+}
+
+body .card img {
+  width: 60vmin;
+  height: 80vmin;
+  position: absolute;
+  top: 0;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.9;
+  }
+  20% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0.8;
+  }
+  30% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    opacity: 0.7;
+  }
+  40% {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 0.6;
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  60% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0.4;
+  }
+  70% {
+    -webkit-transform: scale(2.4);
+            transform: scale(2.4);
+    opacity: 0.3;
+  }
+  80% {
+    -webkit-transform: scale(2.6);
+            transform: scale(2.6);
+    opacity: 0.2;
+  }
+  90% {
+    -webkit-transform: scale(2.8);
+            transform: scale(2.8);
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.9;
+  }
+  20% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0.8;
+  }
+  30% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    opacity: 0.7;
+  }
+  40% {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 0.6;
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  60% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0.4;
+  }
+  70% {
+    -webkit-transform: scale(2.4);
+            transform: scale(2.4);
+    opacity: 0.3;
+  }
+  80% {
+    -webkit-transform: scale(2.6);
+            transform: scale(2.6);
+    opacity: 0.2;
+  }
+  90% {
+    -webkit-transform: scale(2.8);
+            transform: scale(2.8);
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
