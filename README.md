@@ -97,7 +97,8 @@
 | 59  | [Sticky Nav](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/sticky-nav-ok)                             | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/sticky-nav-ok/index.html)               |
 | 60  | [Vertical Slider](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/vertical-slider-ok)                   | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/vertical-slider-ok/index.html)          |
 | 61  | [Github API](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/github-ok)                                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/github-ok/index.html)                   |
-| 62  | [Github API](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/heart-ok)                                  | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/heart-ok/index.html)                    |
+| 62  | [Heart Like](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/heart-ok)                                  | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/heart-ok/index.html)                    |
+| 63  | [Auto Type](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/autotype-ok)                                | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/autotype-ok/index.html)                 |
 
 ## Useful websites
 

@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #4a4e69;
+  color: white;
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .speed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    width: 5rem;
+    height: 2rem;
+
+    h5 {
+      font-size: 0.8rem;
+      width: 70%;
+    }
+
+    label {
+      font-size: 0.6rem;
+      margin-right: 0.5rem;
+    }
+    
+    input {
+      width: 2.5rem;
+      font-size: 0.8rem;
+      height: 1rem;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #4a4e69;
+  color: white;
+}
+
+body h3 {
+  font-size: 1.3rem;
+}
+
+body .speed-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  width: 5rem;
+  height: 2rem;
+}
+
+body .speed-container h5 {
+  font-size: 0.8rem;
+  width: 70%;
+}
+
+body .speed-container label {
+  font-size: 0.6rem;
+  margin-right: 0.5rem;
+}
+
+body .speed-container input {
+  width: 2.5rem;
+  font-size: 0.8rem;
+  height: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
