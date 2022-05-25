@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #003049;
+  color: wheat;
+
+  .container {
+    width: 45vmin;
+    height: 60vmin;
+    border: 1px solid #d62828;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .input {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding-left: 0.5rem;
+      }
+
+      .copy-btn {
+        position: absolute;
+        background-color: #d62828;
+        width: 2rem;
+        height: 2rem;
+        right: 6px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-image: url("./copy.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+      }
+    }
+
+    .pass-specs {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.3rem;
+
+        #length {
+          padding: 0.1rem;
+          border-radius: 2px;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    .generate-btn {
+      width: 100%;
+      height: 2rem;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background-color: #f77f00;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    .container {
+      width: 70vmin;
+      height: 80vmin;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    .container {
+      width: 90vmin;
+      height: 70vmax;
+    }
+  }
+}

@@ -64,7 +64,8 @@ var projects = [
   {name: 'Vertical Slider', link: './projects/vertical-slider-ok', image: '/image/vertical-slider.png'},
   {name: 'Github API', link: './projects/github-ok', image: '/github.png'},
   {name: 'Heart', link: './projects/heart-ok', image: '/image/heart-ok.png'},
-  {name: 'Autotype', link: './projects/autotype-ok', image: '/autotype-ok.png'},
+  {name: 'Autotype', link: './projects/autotype-ok', image: '/autotype.png'},
+  {name: 'Password Generator', link: './projects/password-generator-ok', image: '/pass-generator.png'},
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
