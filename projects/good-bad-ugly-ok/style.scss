@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // padding will be added in element's width
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d3557;
+  color: wheat;
+
+  .toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkbox:checked + .label .ball {
+    left: 26px;
+  }
+
+  
+  .checkbox:not(:checked) + .label {
+    background-color: #f0a6ca;
+  }
+
+  .label {
+    background-color: red;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    position: relative;
+    cursor: pointer;
+
+    .ball {
+      background-color: #2b2d42;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: left 0.3s ease;
+    }
+  }
+
+  span {
+    width: 3rem;
+  }
+}

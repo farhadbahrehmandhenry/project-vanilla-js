@@ -66,6 +66,8 @@ var projects = [
   {name: 'Heart', link: './projects/heart-ok', image: '/image/heart-ok.png'},
   {name: 'Autotype', link: './projects/autotype-ok', image: '/autotype.png'},
   {name: 'Password Generator', link: './projects/password-generator-ok', image: '/pass-generator.png'},
+  {name: 'Good Bad Ugly', link: './projects/good-bad-ugly-ok', image: '/good-bad-ugly.png'},
+
 ];
 
 window.addEventListener('DOMContentLoaded', () => {

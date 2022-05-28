@@ -99,6 +99,7 @@
 | 61  | [Github API](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/github-ok)                                 | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/github-ok/index.html)                   |
 | 62  | [Heart Like](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/heart-ok)                                  | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/heart-ok/index.html)                    |
 | 63  | [Auto Type](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/autotype-ok)                                | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/autotype-ok/index.html)                 |
+| 64  | [Auto Type](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/good-bad-ugly-ok)                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/good-bad-ugly-ok/index.html)            |
 
 ## Useful websites
 
