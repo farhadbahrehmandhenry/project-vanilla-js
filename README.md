@@ -100,6 +100,7 @@
 | 62  | [Heart Like](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/heart-ok)                                  | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/heart-ok/index.html)                    |
 | 63  | [Auto Type](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/autotype-ok)                                | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/autotype-ok/index.html)                 |
 | 64  | [Auto Type](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/good-bad-ugly-ok)                           | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/good-bad-ugly-ok/index.html)            |
+| 65  | [Auto Type](https://github.com/farhadbahrehmandhenry/project-vanilla-js/tree/master/projects/notebook-ok)                                | [Live Demo](https://farhadbahrehmandhenry.github.io/project-vanilla-js/projects/notebook-ok/index.html)                 |
 
 ## Useful websites
 
@@ -113,7 +114,7 @@
 | CSS-color           | https://webgradients.com/                                                        |
 | CSS-icon            | https://freeicons.io/                                                            |
 | CSS-icon            | https://www.toptal.com/designers/htmlarrows/                                     |
-| CSS-icon            | https://icons8.com/icons/set/delete                                              |
+| CSS-icon animated   | https://icons8.com/icons/set/delete                                              |
 | CSS-icon            | https://fontawesome.com/icons                                                    |
 | CSS-icon            | https://cdnjs.com/libraries/font-awesome                                         |
 | CSS-icon            | https://lordicon.com/                                                            |
@@ -139,6 +140,7 @@
 | API                 | https://icanhazdadjoke.com/api                                                   |
 | API                 | https://www.themoviedb.org/?language=en-US                                       |
 | DOM-Element         | https://www.javascripttutorial.net/javascript-dom/javascript-width-height/       |
+| API                 | https://www.programmableweb.com/                                                 |
 | Photo               | https://unsplash.com/                                                            |
 | Design              | https://github.com/bradtraversy/design-resources-for-developers                  |
 | JS                  | https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts |
@@ -149,6 +151,7 @@
 | entity codes        | https://dev.w3.org/html5/html-author/charref                                     |
 | generator           | https://html-css-js.com/                                                         |
 | css transition      | https://easings.net/                                                             |
+| mark down           | https://stackedit.io/                                                            |
 
 ## articles =>
 

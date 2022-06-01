@@ -67,6 +67,7 @@ var projects = [
   {name: 'Autotype', link: './projects/autotype-ok', image: '/autotype.png'},
   {name: 'Password Generator', link: './projects/password-generator-ok', image: '/pass-generator.png'},
   {name: 'Good Bad Ugly', link: './projects/good-bad-ugly-ok', image: '/good-bad-ugly.png'},
+  {name: 'Notebook', link: './projects/notebook-ok', image: '/image/note.png'},
 
 ];
 
