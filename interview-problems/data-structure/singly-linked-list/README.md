@@ -1,4 +1,0 @@
-- singli linked list
-  - list of data with no index
-  - node and value that is linked to the next node
-  - head --> nod --> node --> tail --> null
